@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_JSON ].JSON_Response_Error( ${1:g.Error_Code}, ${2:g.Error_Message} ) }">]]></content>
+    <tabTrigger>jsonerror</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

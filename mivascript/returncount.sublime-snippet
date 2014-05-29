@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].ListLoad_EOF_Return( '#Error#', l.count ) }">]]></content>
+    <tabTrigger>returncount</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Module Shopping Interface Activity Logging Feature (log)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "LogModule_Action" PARAMETERS = "module var, action" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "LogModule_Screen" PARAMETERS = "module var, screen" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "LogModule_UIException" PARAMETERS = "module var, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>log</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTION NAME = "Module_Description" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.module:code"		VALUE = "${1}">
+	<MvASSIGN NAME = "l.module:name"		VALUE = "${2}">
+	<MvASSIGN NAME = "l.module:provider"	VALUE = "${3:Miva Merchant}">
+	<MvASSIGN NAME = "l.module:version"		VALUE = "1.0000">
+	<MvASSIGN NAME = "l.module:api_ver"		VALUE = "${4:5.70}">
+	<MvASSIGN NAME = "l.module:features"	VALUE = "${5}">
+</MvFUNCTION>
+]]></content>
+    <tabTrigger>module</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

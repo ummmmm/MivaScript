@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Shopping Interface Customer Actions Feature (custrt)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Customer_Runtime_Insert" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Runtime_Validate" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Runtime_Update" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Runtime_ChangeEmailAddress" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Runtime_ChangePassword" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>custrt</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

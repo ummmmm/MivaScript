@@ -1,0 +1,71 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Shipping Label Generation Feature (shipping_label)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Methods" PARAMETERS = "module var, methods var, ordershipment var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "{ l.label_methods_count }">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Boxes" PARAMETERS = "module var, ordershipment var, boxes var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Shipment_Validate" PARAMETERS = "module var, method, ordershipment var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Shipment_Invalid" PARAMETERS = "module var, method, field_id, ordershipment var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Shipment_Fields" PARAMETERS = "module var, method, ordershipment var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Shipment_Prompt" PARAMETERS = "module var, method, field_id, ordershipment var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Shipment_Field" PARAMETERS = "module var, method, field_id, ordershipment var" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Package_Fields" PARAMETERS = "module var, method, field_prefix, fields var, ordershipment var, product_ids var, product_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Package_Validate_Package" PARAMETERS = "module var, method, ordershipment var, package var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Package_Validate" PARAMETERS = "module var, method, field_prefix, fields var, ordershipment var, product_ids var, product_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Package_Invalid" PARAMETERS = "module var, method, field_id, field_prefix, fields var, ordershipment var, product_ids var, product_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Package_Prompt" PARAMETERS = "module var, method, field_id, field_prefix, fields var, ordershipment var, product_ids var, product_count" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Package_Field" PARAMETERS = "module var, method, field_id, field_prefix, fields var, ordershipment var, product_ids var, product_count" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Labels_Generate" PARAMETERS = "module var, method, source_address var, dest_address var, ordershipment var, package_list var, package_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Render" PARAMETERS = "module var, ordershipmentlabel var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ShippingModule_Label_Void_Shipment" PARAMETERS = "module var, ordershipment var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>shipping_label</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

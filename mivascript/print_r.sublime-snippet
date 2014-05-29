@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEVAL EXPR = "{ miva_array_serialize( ${1} ) }">]]></content>
+    <tabTrigger>print_r</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

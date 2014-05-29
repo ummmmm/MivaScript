@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_JSON ].JSON_Response_Success() }">]]></content>
+    <tabTrigger>jsonsuccess</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

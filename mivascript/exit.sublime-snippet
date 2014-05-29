@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEXIT>]]></content>
+    <tabTrigger>exit</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

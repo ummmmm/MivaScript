@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[' \$ g.Store_Table_Prefix \$ '${1}]]></content>
+    <tabTrigger>stp</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

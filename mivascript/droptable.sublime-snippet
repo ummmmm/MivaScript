@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<MvQUERY NAME = "Merchant" QUERY = "{ 'DROP TABLE ' \$ g.Store_Table_Prefix \$ '${1}' }">]]></content>
+	<tabTrigger>droptable</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

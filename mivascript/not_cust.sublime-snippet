@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Customer Configuration Change Notification Feature (not_cust)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_Customer_Insert" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_Customer_Delete" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>not_cust</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

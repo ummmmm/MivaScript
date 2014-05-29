@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Feature_PRV_AD ].PRV_LogMessage( l.provide_xml, '${1}' ) }">]]></content>
+    <tabTrigger>prv_message</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

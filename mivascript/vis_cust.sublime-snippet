@@ -1,0 +1,37 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Customer Add/Edit Screen Feature (vis_cust)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Customer_Tabs" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Head" PARAMETERS = "module var, tab, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Content" PARAMETERS = "module var, tab, load_fields, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Insert" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Delete" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Update" PARAMETERS = "module var, customer var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Validate" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>vis_cust</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[<MvWHILE EXPR = "{ NOT ${1:View Name}.d.EOF }">
+	${2}
+	
+	<MvSKIP NAME = "Merchant" VIEW = "${3:View Name}" ROWS = 1>
+</MvWHILE>]]></content>
+    <tabTrigger>dbwhile</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

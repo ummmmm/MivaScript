@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[<MvCAPTURE VARIABLE = "${1}">
+
+</MvCAPTURE>]]></content>
+    <tabTrigger>capture</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

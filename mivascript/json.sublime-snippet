@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Module JSON Feature (json)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_JSON" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	${1}
+</MvFUNCTION>]]></content>
+    <tabTrigger>json</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvELSE>]]></content>
+    <tabTrigger>else</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

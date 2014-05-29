@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>mv</string>
+	</array>
+	<key>firstLineMatch</key>
+	<string>^&lt;MIVA </string>
+	<key>name</key>
+	<string>Miva Script</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Built-in Miva functions</string>
+			<key>match</key>
+			<string>\s+(glosub|encodeentities|padl|miva_array_max|gettoken|encodeattribute|trim|int|toupper|miva_array_collapse|miva_array_serialize|len|miva_array_elements|miva_output_header|gdImageCreate|gdImageGifOutput|gdImageDestroy|substring|miva_variable_value|miva_struct_members|decodeattribute|tolower|substring_var|len_var|miva_array_deserialize|asciichar|power|isdigit|asciivalue|isxdigit|isalpha|isspace|decodeentities|crypto_base64_encode|crypto_rand_bytes|miva_member_exists|indexof|file_read_bytes|gdImageSX|gdImageSY|file_read|xml_parse_var|fexists|miva_array_clear|miva_array_sort|file_create|fsize|miva_output_flush|crypto_base64_decode|crypto_md5|isalnum|xml_parse_error|crypto_hmac_sha256|crypto_hmac_sha1|miva_sleep|miva_hex_encode|miva_array_search)\(</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>errorcodes.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Error codes</string>
+			<key>match</key>
+			<string>'([A-Z]+-[A-Z]+-[A-Z]+-[0-9]{5}|#Error#)'</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>&lt;MvCOMMENT&gt;</string>
+			<key>comment</key>
+			<string>Any opening/closing Miva tag</string>
+			<key>end</key>
+			<string>&lt;/MvCOMMENT&gt;</string>
+			<key>name</key>
+			<string>comment.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>comment.mivascript</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Any opening/closing Miva tag</string>
+			<key>match</key>
+			<string>&lt;MvFUNCTION |&lt;/MvFUNCTION&gt;</string>
+			<key>name</key>
+			<string>mivascript.function.mivascript</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Any opening/closing Miva tag</string>
+			<key>match</key>
+			<string>&lt;Mv([^ ]+)|&lt;/Mv([^&gt;]+)&gt;</string>
+			<key>name</key>
+			<string>keyword.control.mivascript</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.localname.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Attributes e.g. PARAMETERS ERROROUTPUTLEVEL INDEX etc..</string>
+			<key>match</key>
+			<string>\s*([A-Z-]+)\s+=</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.file.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Matches function names</string>
+			<key>match</key>
+			<string>([A-Za-z0-9_]+)\(</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s+(EQ|GT|LT|NE|GE|LE)\s+</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.mivascript</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.mvdo.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Inline MvDOs</string>
+			<key>match</key>
+			<string> (\[ g\.[^\]]+ \])\.</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.mivascript</string>
+	<key>uuid</key>
+	<string>1a3a4d44-98f3-4d0f-a124-520edd1d96c9</string>
+</dict>
+</plist>

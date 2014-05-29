@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| External Requirement Verification Feature (externalreq)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_External_Requirements_Met" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>externalreq</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

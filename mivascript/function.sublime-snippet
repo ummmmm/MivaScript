@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTION NAME = "${1}" PARAMETERS = "${2}" STANDARDOUTPUTLEVEL = "${3}">
+	${0}
+</MvFUNCTION>]]></content>
+    <tabTrigger>function</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

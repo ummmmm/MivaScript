@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<MvQUERY NAME 	= "Merchant"
+		 QUERY 	= "{ '${1}' }"
+		 FIELDS = "${2}">
+<MvIF EXPR = "{ g.MvQUERY_Error }">
+	<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvQUERY_Error ) }">
+</MvIF>]]></content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

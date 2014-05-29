@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<MvASSIGN NAME = "l.null" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Delete( '${1}' ) }">]]></content>
+	<tabTrigger>storekeydelete</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

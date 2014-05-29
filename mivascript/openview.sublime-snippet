@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[<MvOPENVIEW NAME	= "Merchant"
+			VIEW 	= "${1:View Name}"
+			QUERY 	= "{ 'SELECT ${2:*} FROM ${3:' \$ g.Store_Table_Prefix \$ '}${4}' }"
+			FIELDS	= "${5}">
+<MvIF EXPR = "{ g.MvOPENVIEW_Error }">
+	<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvOPENVIEW_Error ) }">
+</MvIF>
+
+<MvASSIGN NAME = "l.count" VALUE = 0>
+
+<MvWHILE EXPR = "{ NOT ${6:View Name}.d.EOF }">
+	<MvEVAL EXPR = "{ ${7} }">
+
+	<MvSKIP NAME = "Merchant" VIEW = "${8:View Name}" ROWS = 1>
+</MvWHILE>
+
+<MvCLOSEVIEW NAME = "Merchant" VIEW = "${9:View Name}">
+<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].ListLoad_EOF_Return( '#Error#', l.count ) }">]]></content>
+    <tabTrigger>openview</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

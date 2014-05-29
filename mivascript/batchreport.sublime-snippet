@@ -1,0 +1,30 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Batch Report Feature (batchreport)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "BatchReportModule_Report" PARAMETERS = "module var, batch_id" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BatchReportModule_Order_Reports" PARAMETERS = "module var, reports var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BatchReportModule_Run_OrderList" PARAMETERS = "module var, report_code, orders var, order_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BatchReportModule_Shipment_Reports" PARAMETERS = "module var, reports var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BatchReportModule_Run_ShipmentList" PARAMETERS = "module var, report_code, shipments var, shipment_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+]]></content>
+    <tabTrigger>batchreport</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

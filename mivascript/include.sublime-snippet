@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvINCLUDE FILE = "${1:File Path}">]]></content>
+    <tabTrigger>include</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

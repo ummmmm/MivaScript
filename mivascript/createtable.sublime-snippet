@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<MvQUERY NAME 	= "Merchant"
+		 QUERY 	= "{ 'CREATE TABLE ' \$ g.Store_Table_Prefix \$ '${1}
+					  (
+						${0}
+					  )' }">
+<MvIF EXPR = "{ g.MvQUERY_Error }">
+	<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvQUERY_Error ) }">
+</MvIF>]]></content>
+<tabTrigger>createtable</tabTrigger>
+<scope>source.mivascript</scope>
+</snippet>

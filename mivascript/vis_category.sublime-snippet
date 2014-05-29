@@ -1,0 +1,37 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Category Add/Edit Screen Feature (vis_category)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Category_Tabs" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Head" PARAMETERS = "module var, tab, category var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Content" PARAMETERS = "module var, tab, load_fields, category var" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Insert" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Delete" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Update" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Validate" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>vis_category</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

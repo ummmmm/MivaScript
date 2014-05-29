@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].Error_Load_EOF( '#Error#' ) }">]]></content>
+    <tabTrigger>returneof</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

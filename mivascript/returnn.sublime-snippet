@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN>]]></content>
+    <tabTrigger>returnn</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

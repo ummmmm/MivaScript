@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<MvIF EXPR = "{ ${1} }">
+	${2:If expression}
+<MvELSE>
+	${3:else expression}
+</MvIF>
+]]></content>
+    <tabTrigger>ifelse</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

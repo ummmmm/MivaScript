@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| ${1}
+|
+</MvCOMMENT>
+]]></content>
+    <tabTrigger>comment</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

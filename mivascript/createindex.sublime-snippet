@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<MvQUERY NAME 	= "Merchant"
+		 QUERY 	= "{ 'CREATE${1: UNIQUE} INDEX ' \$ g.Store_Table_Prefix \$ '${2}_${3:1} ON ' \$ g.Store_Table_Prefix \$ '${2} ( ${4} )' }">
+<MvIF EXPR = "{ g.MvQUERY_Error }">
+	<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvQUERY_Error ) }">
+</MvIF>
+]]></content>
+	<tabTrigger>createindex</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

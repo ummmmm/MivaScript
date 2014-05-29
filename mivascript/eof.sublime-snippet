@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[[ g.Module_Library_DB ].Error_Is_EOF()]]></content>
+    <tabTrigger>eof</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

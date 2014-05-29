@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', '${1}' ) }">]]></content>
+    <tabTrigger>error</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
