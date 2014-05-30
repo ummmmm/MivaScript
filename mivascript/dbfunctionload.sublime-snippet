@@ -3,7 +3,8 @@
 <MvFUNCTION NAME = "${1}" PARAMETERS = "${2}, ${3} var" STANDARDOUTPUTLEVEL = "" ERROROUTPUTLEVEL = "">
 	<MvOPENVIEW NAME	= "Merchant"
 				VIEW 	= "${4}"
-				QUERY 	= "{ 'SELECT * FROM ' \$ g.Store_Table_Prefix \$ '${4} WHERE ${2} = ?' }">
+				QUERY 	= "{ 'SELECT * FROM ' \$ g.Store_Table_Prefix \$ '${4} WHERE ${2} = ?' }"
+				FIELDS	= "l.${2}">
 	<MvIF EXPR = "{ g.MvOPENVIEW_Error }">
 		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvOPENVIEW_Error ) }">
 	</MvIF>
