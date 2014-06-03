@@ -2,6 +2,6 @@
     <content><![CDATA[<MvFUNCTION NAME = "${1}" PARAMETERS = "${2}" STANDARDOUTPUTLEVEL = "" ERROROUTPUTLEVEL = "">
 	${0}
 </MvFUNCTION>]]></content>
-    <tabTrigger>dbfunction</tabTrigger>
+    <tabTrigger>db_function</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>

@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[' \$ [ g.Module_Library_Native_DBAPI ].DB_Type_BOOL() \$ ',]]></content>
+	<tabTrigger>db_type_bool</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

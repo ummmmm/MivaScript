@@ -20,6 +20,6 @@
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 ]]></content>
-	<tabTrigger>dbfunctionload</tabTrigger>
+	<tabTrigger>db_function_load</tabTrigger>
 	<scope>source.mivascript</scope>
 </snippet>

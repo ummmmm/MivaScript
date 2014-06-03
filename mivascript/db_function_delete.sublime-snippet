@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<MvFUNCTION NAME = "${1}" PARAMETERS = "${2}" STANDARDOUTPUTLEVEL = "" ERROROUTPUTLEVEL = "">
+	<MvOPENVIEW NAME	= "Merchant"
+				VIEW 	= "${3}"
+				QUERY 	= "{ 'DELETE FROM ' \$ g.Store_Table_Prefix \$ '${3} WHERE ${2} = ?' }"
+				FIELDS	= "l.${2}">
+	<MvIF EXPR = "{ g.MvOPENVIEW_Error }">
+		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvOPENVIEW_Error ) }">
+	</MvIF>
+
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+]]></content>
+	<tabTrigger>db_function_delete</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

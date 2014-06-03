@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+<MvFUNCTION NAME = "${1}" PARAMETERS = "${2} var" STANDARDOUTPUTLEVEL = "" ERROROUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.${2}:id" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Generate( '${4}' ) }">
+
+	<MvOPENVIEW NAME	= "Merchant"
+				VIEW 	= "${4}"
+				QUERY 	= "{ 'INSERT INTO ' \$ g.Store_Table_Prefix \$ '${4}
+							  ( ${5} )
+							  VALUES
+							  ( ${6} )' }"
+				FIELDS	= "l.${2}:id${0}">
+	<MvIF EXPR = "{ g.MvOPENVIEW_Error }">
+		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvOPENVIEW_Error ) }">
+	</MvIF>
+
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+]]></content>
+	<tabTrigger>db_function_insert</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
