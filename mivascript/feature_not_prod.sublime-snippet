@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+<MvCOMMENT>
+|
+| Feature not_prod
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_Product_Insert" PARAMETERS = "module var, product var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_Product_Delete" PARAMETERS = "module var, product var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_not_prod</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

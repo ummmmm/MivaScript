@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEVAL EXPR = "{ [ g.Module_Library_Utilities ].DrawOption_SelectOne() }">]]></content>
+    <tabTrigger>draw_option_selectone</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

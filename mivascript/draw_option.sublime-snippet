@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEVAL EXPR = "{ [ g.Module_Library_Utilities ].DrawOption( ${1:value}, ${2:default}, ${3:text} ) }">]]></content>
+    <tabTrigger>draw_option</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

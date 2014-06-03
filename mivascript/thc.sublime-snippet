@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[text, html, compresswhitespace]]></content>
+    <tabTrigger>thc</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

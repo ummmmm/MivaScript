@@ -4,6 +4,6 @@
 	
 	<MvSKIP NAME = "Merchant" VIEW = "${1}" ROWS = 1>
 </MvWHILE>]]></content>
-    <tabTrigger>dbwhile</tabTrigger>
+    <tabTrigger>db_while</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>

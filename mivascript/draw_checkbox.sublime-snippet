@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEVAL EXPR = "{ [ g.Module_Library_Utilities ].DrawCheckbox( ${1:checked}, ${2:name}, ${3:value}, ${4:text} ) }">]]></content>
+    <tabTrigger>draw_checkbox</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

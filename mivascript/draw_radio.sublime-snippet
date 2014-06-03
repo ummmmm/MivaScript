@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEVAL EXPR = "{ [ g.Module_Library_Utilities ].DrawRadio( ${1:name}, ${2:value}, ${3:default}, ${4:text} ) }">]]></content>
+    <tabTrigger>draw_radio</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
