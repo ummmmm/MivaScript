@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| OrderItem Status Change Notification Feature (not_orderitem)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_OrderItem_Delete" PARAMETERS = "module var, count, original_orderitems var, orderitems var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_OrderItem_StatusChange" PARAMETERS = "module var, orderitem_count, original_orderitems var, orderitems var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_not_orderitem</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

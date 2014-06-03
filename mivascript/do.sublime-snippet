@@ -1,5 +1,0 @@
-<snippet>
-    <content><![CDATA[<MvDO FILE = "{ ${1} }" NAME = "${2}" VALUE = "{ ${3} }">]]></content>
-    <tabTrigger>do</tabTrigger>
-    <scope>source.mivascript</scope>
-</snippet>

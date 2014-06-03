@@ -1,5 +1,0 @@
-<snippet>
-    <content><![CDATA[<MvASSIGN NAME = "${1}" MEMBER = "${2}" INDEX = "${3}" VALUE = "${4}">]]></content>
-    <tabTrigger>array</tabTrigger>
-    <scope>source.mivascript</scope>
-</snippet>

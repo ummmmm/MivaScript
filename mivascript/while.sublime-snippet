@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[<MvWHILE EXPR = "{ ${1} }">
-	${2}
-</MvWHILE>]]></content>
-    <tabTrigger>while</tabTrigger>
-    <scope>source.mivascript</scope>
-</snippet>

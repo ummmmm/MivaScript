@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Module Provisioning Feature (provision_store)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Provision_Store" PARAMETERS = "module var, provide_xml var" STANDARDOUTPUTLEVEL = "">
+	${1}
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_provision_store</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

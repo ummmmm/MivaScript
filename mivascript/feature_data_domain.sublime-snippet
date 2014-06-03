@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Domain-level Module Data Support Feature (data_domain)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Install" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Uninstall" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Upgrade" PARAMETERS = "module var, version" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_data_domain</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

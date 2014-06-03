@@ -1,5 +1,0 @@
-<snippet>
-    <content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Feature_PRV_AD ].PRV_LogError( l.provide_xml ) }">]]></content>
-    <tabTrigger>logerror</tabTrigger>
-    <scope>source.mivascript</scope>
-</snippet>

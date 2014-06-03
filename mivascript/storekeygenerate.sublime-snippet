@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[<MvASSIGN NAME = "l.${1}" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Generate( '${0}' ) }">]]></content>
+	<content><![CDATA[<MvASSIGN NAME = "${1}" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Generate( '${2}' ) }">]]></content>
 	<tabTrigger>storekeygenerate</tabTrigger>
 	<scope>source.mivascript</scope>
 </snippet>

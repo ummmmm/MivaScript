@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Multiple Category Custom Fields Feature (fields_cat_map)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Category_Fields_Mapped" PARAMETERS = "module var, cat_id, field_map var, output_fields var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_fields_cat_map</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

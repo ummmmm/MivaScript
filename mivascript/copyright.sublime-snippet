@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Miva Merchant v5.x
+|
+| This file and the source codes contained herein are the property of
+| Miva Merchant, Inc.  Use of this file is restricted to the specific terms and
+| conditions in the License Agreement associated with this file.  Distribution
+| of this file or portions of this file for uses not covered by the License
+| Agreement is not allowed without a written agreement signed by an officer of
+| Miva Merchant, Inc.
+|
+| Copyright 1998-2014 Miva Merchant, Inc.  All rights reserved.
+| http://www.mivamerchant.com
+|
+| Prefix         : MER-${1:UTIL}-${2}-
+| Next Error Code: 1   
+|
+</MvCOMMENT>
+]]></content>
+    <tabTrigger>copyright</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

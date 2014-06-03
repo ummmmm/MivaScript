@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[<MvASSIGN NAME = "l.${1}" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Generate( '${0}' ) }">]]></content>
-	<tabTrigger>storekeygenerate</tabTrigger>
-	<scope>source.mivascript</scope>
-</snippet>

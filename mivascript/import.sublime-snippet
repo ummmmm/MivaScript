@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[<MvIMPORT FILE = "{ ${1:File Path} }" FIELDS ="${2:Comma seperated fields}" DELIMITER = "${3}">
-	${4}
-</MvIMPORT>
-]]></content>
-    <tabTrigger>import</tabTrigger>
-    <scope>source.mivascript</scope>
-</snippet>

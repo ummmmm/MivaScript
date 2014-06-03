@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Customer Custom Fields Feature (fields_cust)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Customer_Field_Name" PARAMETERS = "module var, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Field_Value" PARAMETERS = "module var, cust_id, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Fields" PARAMETERS = "module var, fields var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Customer_Set_Field" PARAMETERS = "module var, cust_id, code, value" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_fields_cust</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

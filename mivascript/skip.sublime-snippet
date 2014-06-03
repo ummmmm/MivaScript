@@ -1,5 +1,0 @@
-<snippet>
-    <content><![CDATA[<MvSKIP NAME = "Merchant" VIEW = "${1}" ROWS = 1>]]></content>
-    <tabTrigger>skip</tabTrigger>
-    <scope>source.mivascript</scope>
-</snippet>
