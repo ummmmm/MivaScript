@@ -1,17 +1,16 @@
 <snippet>
 	<content><![CDATA[
 <MvFUNCTION NAME = "${1}" PARAMETERS = "${2} var" STANDARDOUTPUTLEVEL = "" ERROROUTPUTLEVEL = "">
-	<MvASSIGN NAME = "l.${2}:id" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Generate( '${4}' ) }">
+	<MvASSIGN NAME = "l.${2}:id" VALUE = "{ [ g.Module_Library_DB ].StoreKey_Generate( '${3}' ) }">
 
-	<MvOPENVIEW NAME	= "Merchant"
-				VIEW 	= "${4}"
-				QUERY 	= "{ 'INSERT INTO ' \$ g.Store_Table_Prefix \$ '${4}
-							  ( ${5} )
-							  VALUES
-							  ( ${6} )' }"
-				FIELDS	= "l.${2}:id${0}">
-	<MvIF EXPR = "{ g.MvOPENVIEW_Error }">
-		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvOPENVIEW_Error ) }">
+	<MvQUERY NAME 	= "Merchant"
+			 QUERY 	= "{ 'INSERT INTO ' \$ g.Store_Table_Prefix \$ 'ReadyTheme_ProductListings
+						  ( ${4} )
+						  VALUES
+						  ( ${5} )' }"
+			 FIELDS	= "l.${2}:id${0}">
+	<MvIF EXPR = "{ g.MvQUERY_Error }">
+		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvQUERY_Error ) }">
 	</MvIF>
 
 	<MvFUNCTIONRETURN VALUE = 1>

@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[[ g.Module_Admin ].Trim_Boolean( ${1} )]]></content>
+    <content><![CDATA[<MvASSIGN NAME = "${1}" VALUE = "{ [ g.Module_Admin ].Trim_Boolean( ${1} ) }">]]></content>
     <tabTrigger>trim_bool</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>

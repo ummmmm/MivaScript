@@ -11,11 +11,11 @@
 	<MvASSIGN NAME = "l.count" VALUE = 0>
 
 	<MvWHILE EXPR = "{ NOT ${3}.d.EOF }">
-		<MvEVAL EXPR = "{ ${0}_Read( l.${2}[ ++l.count ] ) }">
+		<MvEVAL EXPR = "{ ${0}( l.${2}[ ++l.count ] ) }">
 
 		<MvSKIP NAME = "Merchant" VIEW = "${3}" ROWS = 1>
 	</MvWHILE>
-	
+
 	<MvCLOSEVIEW NAME = "Merchant" VIEW = "${3}">
 	<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].ListLoad_EOF_Return( '#Error#', l.count ) }">
 </MvFUNCTION>
