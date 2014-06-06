@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Admin ].FieldError( '${1:tab}', '${2:field}', '${3}' ) }">]]></content>
+	<tabTrigger>fielderror</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
