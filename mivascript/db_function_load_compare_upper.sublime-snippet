@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+<MvFUNCTION NAME = "${1}" PARAMETERS = "${2}, ${3} var" STANDARDOUTPUTLEVEL = "" ERROROUTPUTLEVEL = "">
+	<MvOPENVIEW NAME	= "Merchant"
+				VIEW 	= "${4}"
+				QUERY 	= "{ 'SELECT
+								*
+							  FROM
+							  	' \$ g.Store_Table_Prefix \$ '${4}
+							  WHERE
+							  	' \$ [ g.Module_Library_Native_DBAPI ].DB_Compare_UPPER( '${2}' ) \$ ' = ' \$ [ g.Module_Library_Native_DBAPI ].DB_Compare_UPPER( '?' ) }"
+				FIELDS	= "l.${2}">
+	<MvIF EXPR = "{ g.MvOPENVIEW_Error }">
+		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_Utilities ].Error( '#Error#', g.MvOPENVIEW_Error ) }">
+	</MvIF>
+
+	<MvIF EXPR = "{ ${4}.d.EOF }">
+		<MvCLOSEVIEW NAME = "Merchant" VIEW = "${4}">
+		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].Error_Load_EOF( '#Error#' ) }">	
+	</MvIF>
+
+	<MvEVAL EXPR = "{ ${5}( l.${3} ) }">
+	
+	<MvCLOSEVIEW NAME = "Merchant" VIEW = "${4}">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+]]></content>
+	<tabTrigger>db_function_load_compare_upper</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
