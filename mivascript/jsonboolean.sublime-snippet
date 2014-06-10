@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEVAL EXPR = "{ [ g.Module_JSON ].JSON_Boolean( ${1} ) }">]]></content>
+    <tabTrigger>jsonboolean</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
