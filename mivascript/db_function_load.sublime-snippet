@@ -14,7 +14,7 @@
 		<MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].Error_Load_EOF( '#Error#' ) }">	
 	</MvIF>
 
-	<MvEVAL EXPR = "{ ${0}_Read( l.${3} ) }">
+	<MvEVAL EXPR = "{ ${5}( l.${3} ) }">
 	
 	<MvCLOSEVIEW NAME = "Merchant" VIEW = "${4}">
 	<MvFUNCTIONRETURN VALUE = 1>
