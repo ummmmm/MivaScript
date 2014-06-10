@@ -1,4 +1,11 @@
-Put the mivascript folder in ~/.config/sublime-text-\*/Packages/User directory
+Miva Merchant Sublime Text 2 & 3
+================================
+
+Place the "mivascript" folder in your Sublime Text 2/3 User Package directory:
+
+Ubuntu: ~/.config/sublime-text-\*/Packages/User/
+
+Windows: C:\Users\USERNAME\AppData\Roaming\Sublime Text *\Packages\User\
 
 Put the Custom Themes folder in ~/.config/sublime-text-\*/Packages directory
 
