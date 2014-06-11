@@ -6,7 +6,7 @@
     "firstLineMatch": "^<MIVA ",
     "patterns": [
         {
-            "match": "\\s+(glosub|encodeentities|padl|miva_array_max|gettoken|encodeattribute|trim|int|toupper|miva_array_collapse|miva_array_serialize|len|miva_array_elements|miva_output_header|gdImageCreate|gdImageGifOutput|gdImageDestroy|substring|miva_variable_value|miva_struct_members|decodeattribute|tolower|substring_var|len_var|miva_array_deserialize|asciichar|power|isdigit|asciivalue|isxdigit|isalpha|isspace|decodeentities|crypto_base64_encode|crypto_rand_bytes|miva_member_exists|indexof|file_read_bytes|gdImageSX|gdImageSY|file_read|xml_parse_var|fexists|miva_array_clear|miva_array_sort|file_create|fsize|miva_output_flush|crypto_base64_decode|crypto_md5|isalnum|xml_parse_error|crypto_hmac_sha256|crypto_hmac_sha1|miva_sleep|miva_hex_encode|miva_array_search)\\(",
+            "match": "\\s+(is(a(l(num|pha)|scii)|cntrl|(x?)digit|graph|(low|upp)er|p(rint|unct)|space)|glosub(_array)?|pad(l|r)|gettoken|makesessionid|mktime_t|(de|en)codeattribute|int|to(upp|low)er|substring(_var)?|len(_var)?|power|ascii(char|value)|(de|en)codeentities|indexof(i)?|file_(append|create|read(_bytes)?)|gd(Clear|Image|Last|True).+?|fexists|fsize|xml_parse_(.*?)|crypto_(.*?)|miva_(.*?)|time(zone|_t_(dayof(month|week|year)|hour|m(in|onth)|sec|year))|rsa_(.*?)|f(copy|delete|exists)|bf_(de|en)crypt|(f|s)isdir|(l|r)?trim)\\(",
             "name": "",
             "comment": "Built-in Miva functions",
             "captures":
