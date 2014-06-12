@@ -1,0 +1,22 @@
+{
+	"scope": "source.mivascript",
+
+	"completions":
+	[
+		"g.Module_Library_DB",
+		"g.Module_Library_Native_DBAPI",
+		"g.Store_Table_Prefix",
+		"g.Module_Library_Utilities",
+
+		{ "trigger": "crypto_hmac_md5", 	"contents": "crypto_hmac_md5( ${1:buffer var}, ${2:key}, '${3:hex|binary}', ${4:output var} )" },
+		{ "trigger": "crypto_hmac_sha1", 	"contents": "crypto_hmac_sha1( ${1:buffer var}, ${2:key}, '${3:hex|binary}', ${4:output var} )" },
+		{ "trigger": "crypto_hmac_sha256", 	"contents": "crypto_hmac_sha256( ${1:buffer var}, ${2:key}, '${3:hex|binary}', ${4:output var} )" },
+		{ "trigger": "file_read", 			"contents": "file_read( ${1:path}, '${2:data|script}', ${3:data var} )" },
+		{ "trigger": "file_read_bytes", 	"contents": "file_read_bytes( ${1:path}, '${2:data|script}', ${3:offset}, ${4:length}, ${5:data var} )" },
+		{ "trigger": "gettoken", 			"contents": "gettoken( ${1:delimited_string}, ${2:characters}, ${3:position_number} )" },
+		{ "trigger": "indexof", 			"contents": "indexof( ${1:search_string}, ${2:target_string var}, ${3:start_number} )" },
+		{ "trigger": "miva_array_search", 	"contents": "miva_array_search( ${1:array var}, ${2:offset}, ${3:element var}, '${4:filter}' )" },
+		{ "trigger": "miva_struct_members", "contents": "miva_struct_members( ${1:aggregate var}, ${2:members var} )" },
+		{ "trigger": "xml_parse_var", 		"contents": "xml_parse_var( ${1:variable var}, ${2:output var} )" }
+	]
+}
