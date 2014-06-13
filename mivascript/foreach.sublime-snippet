@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[<MvFOREACH ITERATOR = "${1}" ARRAY = "${2}"${3: COUNT = "\{ ${4} \}"}>
+	${5}
+</MvFOREACH>]]></content>
+	<tabTrigger>foreach</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
