@@ -3,11 +3,6 @@
 
 	"completions":
 	[
-		"g.Module_Library_DB",
-		"g.Module_Library_Native_DBAPI",
-		"g.Store_Table_Prefix",
-		"g.Module_Library_Utilities",
-
 		{ "trigger": "crypto_hmac_md5", 	"contents": "crypto_hmac_md5( ${1:buffer var}, ${2:key}, '${3:hex|binary}', ${4:output var} )" },
 		{ "trigger": "crypto_hmac_sha1", 	"contents": "crypto_hmac_sha1( ${1:buffer var}, ${2:key}, '${3:hex|binary}', ${4:output var} )" },
 		{ "trigger": "crypto_hmac_sha256", 	"contents": "crypto_hmac_sha256( ${1:buffer var}, ${2:key}, '${3:hex|binary}', ${4:output var} )" },
