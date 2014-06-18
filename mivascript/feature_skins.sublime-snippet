@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<MvCOMMENT>
+|
+| Framework Support Feature (skins)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "SkinsComponentModule_Description" PARAMETERS = "module var, item var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "SkinsComponentModule_Export_Item" PARAMETERS = "module var, item var, output var" STANDARDOUTPUTLEVEL = "">
+
+</MvFUNCTION>
+]]></content>
+	<tabTrigger>feature_skins</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

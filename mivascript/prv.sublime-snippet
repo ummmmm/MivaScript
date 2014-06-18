@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[[ g.Module_Feature_PRV_AD ].PRV_${0}]]></content>
+	<tabTrigger>prv</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>

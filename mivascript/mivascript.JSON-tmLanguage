@@ -42,7 +42,7 @@
             "comment": "Any opening/closing Miva tag"
         },
         {
-            "match": "<Mv([^ ]+)|</Mv([^>]+)>",
+            "match": "<Mv([^\\s]+)|</Mv([^>]+)>|^<MIVA",
             "name": "keyword.control.mivascript",
             "comment": "Any opening/closing Miva tag"
         },

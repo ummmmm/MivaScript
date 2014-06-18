@@ -75,7 +75,7 @@
 			<key>comment</key>
 			<string>Any opening/closing Miva tag</string>
 			<key>match</key>
-			<string>&lt;Mv([^ ]+)|&lt;/Mv([^&gt;]+)&gt;</string>
+			<string>&lt;Mv([^\s]+)|&lt;/Mv([^&gt;]+)&gt;|^&lt;MIVA</string>
 			<key>name</key>
 			<string>keyword.control.mivascript</string>
 		</dict>
