@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<MvEVAL EXPR = "{ [ g.Module_Admin ].Admin_Log_Action( '#Error#', '${1}' ) }">]]></content>
+	<tabTrigger>admin_log_action</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
