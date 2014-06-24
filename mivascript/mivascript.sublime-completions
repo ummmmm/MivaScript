@@ -95,7 +95,6 @@
 		{ "trigger": "log10", 							"contents": "log10( ${1:number} )" },
 		{ "trigger": "ltrim", 							"contents": "ltrim( ${1:string} )" },
 		{ "trigger": "makesessionid", 					"contents": "makesessionid()" },
-		{ "trigger": "micro", 							"contents": "micro( ${1:david has a micro} )" },
 		{ "trigger": "miva_array_binarysearch", 		"contents": "miva_array_binarysearch( ${1:key}, ${2:array var}, ${3:callback}, ${4:data var} )" },
 		{ "trigger": "miva_array_clear", 				"contents": "miva_array_clear( ${1:array var}, ${2:start}, ${3:count} )" },
 		{ "trigger": "miva_array_collapse", 			"contents": "miva_array_collapse( ${1:array var} )" },
