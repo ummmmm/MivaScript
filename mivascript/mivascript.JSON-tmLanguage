@@ -82,30 +82,6 @@
                 "1": { "name": "mivascript.mvdo.mivascript" }
             },
         	"comment": "Inline MvDOs"
-        }/*,
-        {
-        	"name": "",
-        	"begin": "\"",
-        	"beginCaptures":
-        	{
-        		"0":
-        		{
-        			"name": "punctuation.definition.string.begin.mivascript"
-        		}
-        	},
-        	"patterns":
-        	[
-        		{ "include": "$self" },
-        		{ "name": "string.mivascript", "match": "." }
-        	],
-        	"end": "\"",
-        	"endCaptures":
-        	{
-        		"0":
-        		{
-                    "name": "punctuation.definition.string.end.mivascript"
-                }
-        	}
-        }*/
+        }
     ]
 }
