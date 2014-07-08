@@ -118,6 +118,18 @@
 			<string>keyword.operator.comparison.mivascript</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\s(NOT|AND|OR|ISNULL)\s</string>
+			<key>name</key>
+			<string>keyword.operator.logical.mivascript</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s(BIT(AND|OR|XOR|OC|SL|SR))\s</string>
+			<key>name</key>
+			<string>keyword.operator.bitwise.mivascript</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>

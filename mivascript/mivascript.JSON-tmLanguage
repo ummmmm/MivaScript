@@ -68,6 +68,14 @@
         	"name": "keyword.operator.comparison.mivascript"
         },
         {
+            "match": "\\s(NOT|AND|OR|ISNULL)\\s",
+            "name": "keyword.operator.logical.mivascript"
+        },
+        {
+            "match": "\\s(BIT(AND|OR|XOR|OC|SL|SR))\\s",
+            "name": "keyword.operator.bitwise.mivascript"
+        },
+        {
         	"match": " (\\[ g\\.[^\\]]+ \\])\\.",
             "name": "",
             "captures": {
