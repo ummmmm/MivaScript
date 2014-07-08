@@ -141,7 +141,7 @@
 			<key>comment</key>
 			<string>Inline MvDOs</string>
 			<key>match</key>
-			<string> (\[ g\.[^\]]+ \])\.</string>
+			<string>(?&lt;=\s)(\[ g\.[^\]]+ \])\.</string>
 			<key>name</key>
 			<string></string>
 		</dict>

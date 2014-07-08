@@ -76,7 +76,7 @@
             "name": "keyword.operator.bitwise.mivascript"
         },
         {
-        	"match": " (\\[ g\\.[^\\]]+ \\])\\.",
+        	"match": "(?<=\\s)(\\[ g\\.[^\\]]+ \\])\\.",
             "name": "",
             "captures": {
                 "1": { "name": "mivascript.mvdo.mivascript" }
