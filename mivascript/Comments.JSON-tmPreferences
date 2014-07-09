@@ -1,0 +1,17 @@
+{
+    "name": "Comments",
+    "scope": "source.mivascript",
+    "settings": {
+        "shellVariables": [
+            {
+                "name": "TM_COMMENT_START",
+                "value": "<MvCOMMENT>"
+            },
+            {
+                "name": "TM_COMMENT_END",
+                "value": "</MvCOMMENT>"
+            }
+        ]
+    },
+    "uuid": "1295e688-df24-45d2-98f3-13564f3c392b"
+}
