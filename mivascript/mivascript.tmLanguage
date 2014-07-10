@@ -26,35 +26,23 @@
 			<key>match</key>
 			<string>(?&lt;=\s)(is(a(l(num|pha)|scii)|cntrl|(x?)digit|graph|(low|upp)er|p(rint|unct)|space)|glosub(_array)?|pad(l|r)|gettoken|makesessionid|mktime_t|(de|en)codeattribute|int|to(upp|low)er|substring(_var)?|len(_var)?|power|ascii(char|value)|(de|en)codeentities|indexof(i)?|file_(append|create|read(_bytes)?)|gd(Clear|Image|Last|True).+?|fsize|xml_parse_(.*?)|crypto_(.*?)|miva_array_(binarysearch|c(lear|ollapse|opy(_ref)?)|de(lete|serialize)|elements|find|insert(_(ref|var))?|m(ax|erge(_ref)?|in)|next|p(op(_ref)?|revious)|s(e(arch|rialize)|hift(_ref)?|ort))|miva_variable_value|time(zone|_t_(dayof(month|week|year)|hour|m(in|onth)|sec|year))|rsa_(.*?)|(f|s)(copy|delete|exists)|bf_(de|en)crypt|(f|s)isdir|(l|r)?trim)\(</string>
 			<key>name</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>errorcodes.mivascript</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Error codes</string>
-			<key>match</key>
-			<string>'([A-Z]+-[A-Z]+-[A-Z]+-[0-9]{5}|#Error#)'</string>
-			<key>name</key>
-			<string></string>
+			<string>source.mivascript</string>
 		</dict>
 		<dict>
 			<key>begin</key>
 			<string>&lt;MvCOMMENT&gt;</string>
 			<key>comment</key>
-			<string>Any opening/closing Miva tag</string>
+			<string>Any opening/closing MvCOMMENT tag</string>
 			<key>end</key>
 			<string>&lt;/MvCOMMENT&gt;</string>
 			<key>name</key>
 			<string>comment.mivascript</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
 				<dict>
 					<key>match</key>
 					<string>.</string>
@@ -93,10 +81,30 @@
 			<key>match</key>
 			<string>\s*([A-Z-]+)\s+=</string>
 			<key>name</key>
-			<string></string>
+			<string>source.mivascript</string>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>match</key>
+			<string>\b(EQ|GT|LT|NE|GE|LE)\b</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.mivascript</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(NOT|AND|OR|ISNULL)\b</string>
+			<key>name</key>
+			<string>keyword.operator.logical.mivascript</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(BIT(AND|OR|XOR|OC|SL|SR))\b</string>
+			<key>name</key>
+			<string>keyword.operator.bitwise.mivascript</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>([A-Za-z0-9_]+)\(</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -104,46 +112,90 @@
 					<string>support.function.file.mivascript</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>Matches function names</string>
-			<key>match</key>
-			<string>([A-Za-z0-9_]+)\(</string>
+			<key>end</key>
+			<string>\)</string>
 			<key>name</key>
-			<string></string>
+			<string>source.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>source.mivascript</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>\s(EQ|GT|LT|NE|GE|LE)\s</string>
-			<key>name</key>
-			<string>keyword.operator.comparison.mivascript</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\s(NOT|AND|OR|ISNULL)\s</string>
-			<key>name</key>
-			<string>keyword.operator.logical.mivascript</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\s(BIT(AND|OR|XOR|OC|SL|SR))\s</string>
-			<key>name</key>
-			<string>keyword.operator.bitwise.mivascript</string>
-		</dict>
-		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>(\[.*?\])\.([A-Za-z0-9_]+)\(</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>mivascript.mvdo.mivascript</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.file.mivascript</string>
+				</dict>
 			</dict>
-			<key>comment</key>
-			<string>Inline MvDOs</string>
-			<key>match</key>
-			<string>(?&lt;=\s)(\[ g\.[^\]]+ \])\.</string>
+			<key>end</key>
+			<string>\)</string>
 			<key>name</key>
-			<string></string>
+			<string>source.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>source.mivascript</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.mivascript</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>'</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.mivascript</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.single.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
+					<key>name</key>
+					<string>constant.character.escape.mivascript</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 	<key>scopeName</key>
