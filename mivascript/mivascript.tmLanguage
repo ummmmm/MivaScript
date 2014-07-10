@@ -31,25 +31,20 @@
 		<dict>
 			<key>begin</key>
 			<string>&lt;MvCOMMENT&gt;</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.mivascript</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>Any opening/closing MvCOMMENT tag</string>
+			<string>Match any MvCOMMENT blocks</string>
 			<key>end</key>
 			<string>&lt;/MvCOMMENT&gt;</string>
 			<key>name</key>
-			<string>comment.mivascript</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>.</string>
-					<key>name</key>
-					<string>comment.mivascript</string>
-				</dict>
-			</array>
+			<string>comment.block.mivascript</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -84,18 +79,24 @@
 			<string>source.mivascript</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Comparison Operators</string>
 			<key>match</key>
 			<string>\b(EQ|GT|LT|NE|GE|LE)\b</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.mivascript</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Logical Operators</string>
 			<key>match</key>
 			<string>\b(NOT|AND|OR|ISNULL)\b</string>
 			<key>name</key>
 			<string>keyword.operator.logical.mivascript</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Bitwise Operators</string>
 			<key>match</key>
 			<string>\b(BIT(AND|OR|XOR|OC|SL|SR))\b</string>
 			<key>name</key>
@@ -112,6 +113,8 @@
 					<string>support.function.file.mivascript</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>Functions Calls</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>name</key>
@@ -146,6 +149,8 @@
 					<string>support.function.file.mivascript</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>MvDOs</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>name</key>
@@ -175,6 +180,8 @@
 					<string>punctuation.definition.string.begin.mivascript</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>Single Quoted Strings</string>
 			<key>end</key>
 			<string>'</string>
 			<key>endCaptures</key>

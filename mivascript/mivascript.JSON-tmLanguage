@@ -14,16 +14,12 @@
             }
         },
         {
-            "comment": "Any opening/closing MvCOMMENT tag",
-            "name": "comment.mivascript",
+            "comment": "Match any MvCOMMENT blocks",
+            "name": "comment.block.mivascript",
             "begin": "<MvCOMMENT>",
-            "patterns": [
-                { "include": "$self" },
-                {
-                    "name": "comment.mivascript",
-                    "match": "."
-                }
-            ],
+            "captures": {
+                "0": { "name": "punctuation.definition.comment.mivascript" }
+            },
             "end": "</MvCOMMENT>"
         },
         {
