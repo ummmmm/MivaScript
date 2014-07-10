@@ -50,7 +50,7 @@
 			<key>comment</key>
 			<string>Any opening/closing Miva tag</string>
 			<key>match</key>
-			<string>&lt;MvFUNCTION |&lt;/MvFUNCTION&gt;</string>
+			<string>&lt;MvFUNCTION\s|&lt;/MvFUNCTION&gt;</string>
 			<key>name</key>
 			<string>mivascript.function.mivascript</string>
 		</dict>
@@ -58,7 +58,7 @@
 			<key>comment</key>
 			<string>Any opening/closing Miva tag</string>
 			<key>match</key>
-			<string>&lt;Mv([^\s]+)|&lt;/Mv([^&gt;]+)&gt;|^&lt;MIVA</string>
+			<string>^&lt;MIVA</string>
 			<key>name</key>
 			<string>keyword.control.mivascript</string>
 		</dict>
@@ -101,6 +101,47 @@
 			<string>\b(BIT(AND|OR|XOR|OC|SL|SR))\b</string>
 			<key>name</key>
 			<string>keyword.operator.bitwise.mivascript</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(&lt;Mv[A-Z]+).*?</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Mathces opening Mv* tags</string>
+			<key>end</key>
+			<string>&gt;</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.mivascript</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>source.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Matches closing Mv* tags</string>
+			<key>match</key>
+			<string>&lt;/Mv[A-Z]+&gt;</string>
+			<key>name</key>
+			<string>keyword.control.mivascript</string>
 		</dict>
 		<dict>
 			<key>begin</key>

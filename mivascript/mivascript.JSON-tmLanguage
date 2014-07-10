@@ -24,13 +24,13 @@
         },
         {
             "comment": "Any opening/closing Miva tag",
-            "match": "<MvFUNCTION |</MvFUNCTION>",
+            "match": "<MvFUNCTION\\s|</MvFUNCTION>",
             "name": "mivascript.function.mivascript"
         },
         {
-            "comment": "Any opening/closing Miva tag",
+            "comment": "The keyword at the top of most MV files",
             "name": "keyword.control.mivascript",
-            "match": "<Mv([^\\s]+)|</Mv([^>]+)>|^<MIVA"
+            "match": "^<MIVA"
         },
         {
             "comment": "Attributes e.g. PARAMETERS ERROROUTPUTLEVEL INDEX etc..",
@@ -54,6 +54,26 @@
             "comment": "Bitwise Operators",
             "match": "\\b(BIT(AND|OR|XOR|OC|SL|SR))\\b",
             "name": "keyword.operator.bitwise.mivascript"
+        },
+        {
+            "comment": "Mathces opening Mv* tags",
+            "name": "source.mivascript",
+            "begin": "(<Mv[A-Z]+).*?",
+            "beginCaptures": {
+                "1": { "name": "keyword.control.mivascript" }
+            },
+            "patterns": [
+                { "include": "$self" }
+            ],
+            "end": ">",
+            "endCaptures": {
+                "0": { "name": "keyword.control.mivascript" }
+            }
+        },
+        {
+            "comment": "Matches closing Mv* tags",
+            "match": "</Mv[A-Z]+>",
+            "name": "keyword.control.mivascript"
         },
         {
             "comment": "Functions Calls",
