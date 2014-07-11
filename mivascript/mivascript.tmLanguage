@@ -197,7 +197,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>([A-Za-z0-9_]+)\(</string>
+			<string>([A-Za-z0-9_]+)(?=\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -220,7 +220,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(\[.*?\])\.([A-Za-z0-9_]+)\(</string>
+			<string>(\[.*?\])\.([A-Za-z0-9_]+)(?=\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>

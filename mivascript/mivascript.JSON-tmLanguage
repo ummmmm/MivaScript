@@ -89,7 +89,7 @@
         },
         {
             "comment": "Functions Calls",
-            "begin": "([A-Za-z0-9_]+)\\(",
+            "begin": "([A-Za-z0-9_]+)(?=\\()",
             "beginCaptures": {
                 "1": { "name": "support.function.file.mivascript" }
             },
@@ -100,7 +100,7 @@
         },
         {
             "comment": "MvDOs",
-            "begin": "(\\[.*?\\])\\.([A-Za-z0-9_]+)\\(",
+            "begin": "(\\[.*?\\])\\.([A-Za-z0-9_]+)(?=\\()",
             "beginCaptures": {
                 "1": { "name": "mivascript.mvdo.mivascript" },
                 "2": { "name": "support.function.file.mivascript" }
