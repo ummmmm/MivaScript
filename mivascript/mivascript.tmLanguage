@@ -24,9 +24,7 @@
 			<key>comment</key>
 			<string>Built-in Miva functions</string>
 			<key>match</key>
-			<string>(?i)\b(is(a(l(num|pha)|scii)|cntrl|(x?)digit|graph|(low|upp)er|p(rint|unct)|space)|glosub(_array)?|pad(l|r)|gettoken|makesessionid|mktime_t|(de|en)codeattribute|int|to(upp|low)er|substring(_var)?|len(_var)?|power|ascii(char|value)|(de|en)codeentities|indexof(i)?|file_(append|create|read(_bytes)?)|gd(Clear|Image|Last|True).+?|fsize|xml_parse_(.*?)|crypto_(.*?)|miva_array_(binarysearch|c(lear|ollapse|opy(_ref)?)|de(lete|serialize)|elements|find|insert(_(ref|var))?|m(ax|erge(_ref)?|in)|next|p(op(_ref)?|revious)|s(e(arch|rialize)|hift(_ref)?|ort))|miva_variable_value|miva_struct_members|time(zone|_t_(dayof(month|week|year)|hour|m(in|onth)|sec|year))|rsa_(.*?)|(f|s)(copy|delete|exists)|bf_(de|en)crypt|(f|s)isdir|(l|r)?trim)\b(?=\()</string>
-			<key>name</key>
-			<string>source.mivascript</string>
+			<string>(?i)\b(is(a(l(num|pha)|scii)|cntrl|(x?)digit|graph|(low|upp)er|p(rint|unct)|space)|glosub(_array)?|pad(l|r)|gettoken|makesessionid|mktime_t|(de|en)codeattribute|int|to(upp|low)er|substring(_var)?|len(_var)?|power|ascii(char|value)|(de|en)codeentities|indexof(i)?|file_(append|create|read(_bytes)?)|gd(Clear|Image|Last|True).+?|fsize|xml_parse_(.*?)|crypto_(.*?)|miva_member_exists|miva_array_(binarysearch|c(lear|ollapse|opy(_ref)?)|de(lete|serialize)|elements|find|insert(_(ref|var))?|m(ax|erge(_ref)?|in)|next|p(op(_ref)?|revious)|s(e(arch|rialize)|hift(_ref)?|ort))|miva_variable_value|miva_struct_members|time(zone|_t_(dayof(month|week|year)|hour|m(in|onth)|sec|year))|rsa_(.*?)|(f|s)(copy|delete|exists)|bf_(de|en)crypt|(f|s)isdir|(l|r)?trim)\b(?=\()</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -133,8 +131,6 @@
 			<string>Attributes e.g. PARAMETERS ERROROUTPUTLEVEL INDEX etc..</string>
 			<key>match</key>
 			<string>\s*([A-Z-]+)\s+=</string>
-			<key>name</key>
-			<string>source.mivascript</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -183,8 +179,6 @@
 					<string>keyword.control.mivascript</string>
 				</dict>
 			</dict>
-			<key>name</key>
-			<string>source.mivascript</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -216,19 +210,11 @@
 			<string>Functions Calls</string>
 			<key>end</key>
 			<string>\)</string>
-			<key>name</key>
-			<string>source.mivascript</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
 					<string>$self</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>.</string>
-					<key>name</key>
-					<string>source.mivascript</string>
 				</dict>
 			</array>
 		</dict>
@@ -252,19 +238,11 @@
 			<string>MvDOs</string>
 			<key>end</key>
 			<string>\)</string>
-			<key>name</key>
-			<string>source.mivascript</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
 					<string>$self</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>.</string>
-					<key>name</key>
-					<string>source.mivascript</string>
 				</dict>
 			</array>
 		</dict>
