@@ -24,7 +24,7 @@
 			<key>comment</key>
 			<string>Built-in Miva functions</string>
 			<key>match</key>
-			<string>(?&lt;=\s)(is(a(l(num|pha)|scii)|cntrl|(x?)digit|graph|(low|upp)er|p(rint|unct)|space)|glosub(_array)?|pad(l|r)|gettoken|makesessionid|mktime_t|(de|en)codeattribute|int|to(upp|low)er|substring(_var)?|len(_var)?|power|ascii(char|value)|(de|en)codeentities|indexof(i)?|file_(append|create|read(_bytes)?)|gd(Clear|Image|Last|True).+?|fsize|xml_parse_(.*?)|crypto_(.*?)|miva_array_(binarysearch|c(lear|ollapse|opy(_ref)?)|de(lete|serialize)|elements|find|insert(_(ref|var))?|m(ax|erge(_ref)?|in)|next|p(op(_ref)?|revious)|s(e(arch|rialize)|hift(_ref)?|ort))|miva_variable_value|miva_struct_members|time(zone|_t_(dayof(month|week|year)|hour|m(in|onth)|sec|year))|rsa_(.*?)|(f|s)(copy|delete|exists)|bf_(de|en)crypt|(f|s)isdir|(l|r)?trim)\(</string>
+			<string>(?i)\b(is(a(l(num|pha)|scii)|cntrl|(x?)digit|graph|(low|upp)er|p(rint|unct)|space)|glosub(_array)?|pad(l|r)|gettoken|makesessionid|mktime_t|(de|en)codeattribute|int|to(upp|low)er|substring(_var)?|len(_var)?|power|ascii(char|value)|(de|en)codeentities|indexof(i)?|file_(append|create|read(_bytes)?)|gd(Clear|Image|Last|True).+?|fsize|xml_parse_(.*?)|crypto_(.*?)|miva_array_(binarysearch|c(lear|ollapse|opy(_ref)?)|de(lete|serialize)|elements|find|insert(_(ref|var))?|m(ax|erge(_ref)?|in)|next|p(op(_ref)?|revious)|s(e(arch|rialize)|hift(_ref)?|ort))|miva_variable_value|miva_struct_members|time(zone|_t_(dayof(month|week|year)|hour|m(in|onth)|sec|year))|rsa_(.*?)|(f|s)(copy|delete|exists)|bf_(de|en)crypt|(f|s)isdir|(l|r)?trim)\b(?=\()</string>
 			<key>name</key>
 			<string>source.mivascript</string>
 		</dict>
@@ -47,18 +47,76 @@
 			<string>comment.block.mivascript</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(?i)(&lt;MvFUNCTION)\s+(?:(NAME)\s*=\s*".*?"){1}(?:\s*(PARAMETERS)\s*=\s*"(.*?)")?(?:\s*(STANDARDOUTPUTLEVEL)\s*=\s*(".*?"))?(?:\s*(ERROROUTPUTLEVEL)\s*=\s*(".*?"))?|(&lt;/MvFUNCTION)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.function.mivascript</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.localname.mivascript</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.localname.mivascript</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.mivascript</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.localname.mivascript</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.mivascript</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.localname.mivascript</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.mivascript</string>
+				</dict>
+				<key>9</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.function.mivascript</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>Any opening/closing Miva tag</string>
-			<key>match</key>
-			<string>&lt;MvFUNCTION\s|&lt;/MvFUNCTION&gt;</string>
+			<string>Match the MvFUNCTION</string>
+			<key>end</key>
+			<string>&gt;</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.function.mivascript</string>
+				</dict>
+			</dict>
 			<key>name</key>
-			<string>mivascript.function.mivascript</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Any opening/closing Miva tag</string>
+			<string>The keyword at the top of most MV files</string>
 			<key>match</key>
-			<string>^&lt;MIVA</string>
+			<string>^&lt;MIVA\s</string>
 			<key>name</key>
 			<string>keyword.control.mivascript</string>
 		</dict>
@@ -244,6 +302,47 @@
 					<string>constant.character.escape.mivascript</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(?&lt;!\})"(?!\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Double Quoted Strings</string>
+			<key>end</key>
+			<string>(?&lt;!\})"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.mivascript</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
+					<key>name</key>
+					<string>constant.character.escape.mivascript</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\$</string>
+			<key>name</key>
+			<string>keyword.operator.string.mivascript</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
