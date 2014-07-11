@@ -131,7 +131,7 @@
         {
             "comment": "Double Quoted Strings",
             "name": "string.quoted.double.mivascript",
-            "begin": "(?<!\\})\"(?!\\{)",
+            "begin": "\"[A-Za-z0-9_.]+?",
             "beginCaptures": {
                 "0": { "name": "punctuation.definition.string.begin.mivascript" }
             },
@@ -141,7 +141,7 @@
                     "name": "constant.character.escape.mivascript"
                 }
             ],
-            "end": "(?<!\\})\"",
+            "end": "\"",
             "endCaptures": {
                 "0": { "name": "punctuation.definition.string.end.mivascript" }
             }
