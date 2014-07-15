@@ -23,7 +23,7 @@
         },
         {
             "comment": "Match the MvFUNCTION",
-            "begin": "(?i)(<MvFUNCTION)\\s+(?:(NAME)\\s*=\\s*\".*?\"){1}(?:\\s*(PARAMETERS)\\s*=\\s*\"(.*?)\")?(?:\\s*(STANDARDOUTPUTLEVEL)\\s*=\\s*(\".*?\"))?(?:\\s*(ERROROUTPUTLEVEL)\\s*=\\s*(\".*?\"))?|(</MvFUNCTION)",
+            "begin": "(?i)(<MvFUNCTION)\\s+(?:(NAME)\\s*=\\s*\"\\w+\")(?:\\s*(PARAMETERS)\\s*=\\s*\"(.*?)\")?(?:\\s*(STANDARDOUTPUTLEVEL)\\s*=\\s*(\".*?\"))?(?:\\s*(ERROROUTPUTLEVEL)\\s*=\\s*(\".*?\"))?|(</MvFUNCTION)",
             "beginCaptures": {
                 "1": { "name": "mivascript.function.mivascript" },
                 "2": { "name": "entity.other.attribute-name.localname.mivascript" },
@@ -38,8 +38,7 @@
             "end": ">",
             "endCaptures": {
                 "0": { "name": "mivascript.function.mivascript" }
-            },
-            "name": ""
+            }
         },
         {
             "comment": "The keyword at the top of most MV files",
@@ -48,7 +47,7 @@
         },
         {
             "comment": "Attributes e.g. PARAMETERS ERROROUTPUTLEVEL INDEX etc..",
-            "match": "\\s*([A-Z-]+)\\s+=",
+            "match": "\\b([A-Z-]+\\b)\\s*=",
             "captures": {
                 "1": { "name": "entity.other.attribute-name.localname.mivascript" }
             }
@@ -69,8 +68,12 @@
             "name": "keyword.operator.bitwise.mivascript"
         },
         {
+            "match": "\\$",
+            "name": "keyword.operator.string.mivascript"
+        },
+        {
             "comment": "Mathces opening Mv* tags",
-            "begin": "(<Mv[A-Z]+).*?",
+            "begin": "(<Mv[A-Z]+)",
             "beginCaptures": {
                 "1": { "name": "keyword.control.mivascript" }
             },
@@ -131,7 +134,7 @@
         {
             "comment": "Double Quoted Strings",
             "name": "string.quoted.double.mivascript",
-            "begin": "\"[A-Za-z0-9_.]+?",
+            "begin": "\"\\w+",
             "beginCaptures": {
                 "0": { "name": "punctuation.definition.string.begin.mivascript" }
             },
@@ -145,10 +148,6 @@
             "endCaptures": {
                 "0": { "name": "punctuation.definition.string.end.mivascript" }
             }
-        },
-        {
-            "match": "\\$",
-            "name": "keyword.operator.string.mivascript"
         }
     ]
 }

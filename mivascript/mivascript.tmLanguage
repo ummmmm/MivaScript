@@ -46,7 +46,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(&lt;MvFUNCTION)\s+(?:(NAME)\s*=\s*".*?"){1}(?:\s*(PARAMETERS)\s*=\s*"(.*?)")?(?:\s*(STANDARDOUTPUTLEVEL)\s*=\s*(".*?"))?(?:\s*(ERROROUTPUTLEVEL)\s*=\s*(".*?"))?|(&lt;/MvFUNCTION)</string>
+			<string>(?i)(&lt;MvFUNCTION)\s+(?:(NAME)\s*=\s*"\w+")(?:\s*(PARAMETERS)\s*=\s*"(.*?)")?(?:\s*(STANDARDOUTPUTLEVEL)\s*=\s*(".*?"))?(?:\s*(ERROROUTPUTLEVEL)\s*=\s*(".*?"))?|(&lt;/MvFUNCTION)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -107,8 +107,6 @@
 					<string>mivascript.function.mivascript</string>
 				</dict>
 			</dict>
-			<key>name</key>
-			<string></string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -130,7 +128,7 @@
 			<key>comment</key>
 			<string>Attributes e.g. PARAMETERS ERROROUTPUTLEVEL INDEX etc..</string>
 			<key>match</key>
-			<string>\s*([A-Z-]+)\s+=</string>
+			<string>\b([A-Z-]+\b)\s*=</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -157,8 +155,14 @@
 			<string>keyword.operator.bitwise.mivascript</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\$</string>
+			<key>name</key>
+			<string>keyword.operator.string.mivascript</string>
+		</dict>
+		<dict>
 			<key>begin</key>
-			<string>(&lt;Mv[A-Z]+).*?</string>
+			<string>(&lt;Mv[A-Z]+)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -283,7 +287,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>"[A-Za-z0-9_.]+?</string>
+			<string>"\w+</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -315,12 +319,6 @@
 					<string>constant.character.escape.mivascript</string>
 				</dict>
 			</array>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\$</string>
-			<key>name</key>
-			<string>keyword.operator.string.mivascript</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
