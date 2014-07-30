@@ -46,7 +46,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(&lt;MvFUNCTION)\s+(?:(NAME)\s*=\s*"\w+")(?:\s*(PARAMETERS)\s*=\s*"(.*?)")?(?:\s*(STANDARDOUTPUTLEVEL)\s*=\s*(".*?"))?(?:\s*(ERROROUTPUTLEVEL)\s*=\s*(".*?"))?|(&lt;/MvFUNCTION)</string>
+			<string>(?i)(&lt;MvFUNCTION)\s+(?:(NAME)\s*=\s*"(\w+)")(?:\s*(PARAMETERS)\s*=\s*"(.*?)")?(?:\s*(STANDARDOUTPUTLEVEL)\s*=\s*(".*?"))?(?:\s*(ERROROUTPUTLEVEL)\s*=\s*(".*?"))?|(&lt;/MvFUNCTION)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -54,37 +54,22 @@
 					<key>name</key>
 					<string>mivascript.function.mivascript</string>
 				</dict>
-				<key>2</key>
+				<key>10</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.attribute-name.localname.mivascript</string>
+					<string>mivascript.function.mivascript</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.attribute-name.localname.mivascript</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.mivascript</string>
+					<string>entity.name.function.mivascript</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.attribute-name.localname.mivascript</string>
-				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.mivascript</string>
+					<string>variable.parameter.function.mivascript</string>
 				</dict>
 				<key>7</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.attribute-name.localname.mivascript</string>
-				</dict>
-				<key>8</key>
 				<dict>
 					<key>name</key>
 					<string>string.quoted.double.mivascript</string>
@@ -92,7 +77,7 @@
 				<key>9</key>
 				<dict>
 					<key>name</key>
-					<string>mivascript.function.mivascript</string>
+					<string>string.quoted.double.mivascript</string>
 				</dict>
 			</dict>
 			<key>comment</key>

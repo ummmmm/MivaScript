@@ -23,17 +23,18 @@
         },
         {
             "comment": "Match the MvFUNCTION",
-            "begin": "(?i)(<MvFUNCTION)\\s+(?:(NAME)\\s*=\\s*\"\\w+\")(?:\\s*(PARAMETERS)\\s*=\\s*\"(.*?)\")?(?:\\s*(STANDARDOUTPUTLEVEL)\\s*=\\s*(\".*?\"))?(?:\\s*(ERROROUTPUTLEVEL)\\s*=\\s*(\".*?\"))?|(</MvFUNCTION)",
+            "begin": "(?i)(<MvFUNCTION)\\s+(?:(NAME)\\s*=\\s*\"(\\w+)\")(?:\\s*(PARAMETERS)\\s*=\\s*\"(.*?)\")?(?:\\s*(STANDARDOUTPUTLEVEL)\\s*=\\s*(\".*?\"))?(?:\\s*(ERROROUTPUTLEVEL)\\s*=\\s*(\".*?\"))?|(</MvFUNCTION)",
             "beginCaptures": {
                 "1": { "name": "mivascript.function.mivascript" },
-                "2": { "name": "entity.other.attribute-name.localname.mivascript" },
-                "3": { "name": "entity.other.attribute-name.localname.mivascript" },
-                "4": { "name": "variable.parameter.function.mivascript" },
-                "5": { "name": "entity.other.attribute-name.localname.mivascript" },
-                "6": { "name": "string.quoted.double.mivascript" },
-                "7": { "name": "entity.other.attribute-name.localname.mivascript" },
-                "8": { "name": "string.quoted.double.mivascript" },
-                "9": { "name": "mivascript.function.mivascript" }
+                // "2": { "name": "entity.other.attribute-name.localname.mivascript" },
+                "3": { "name": "entity.name.function.mivascript" },
+                // "4": { "name": "entity.other.attribute-name.localname.mivascript" },
+                "5": { "name": "variable.parameter.function.mivascript" },
+                // "6": { "name": "entity.other.attribute-name.localname.mivascript" },
+                "7": { "name": "string.quoted.double.mivascript" },
+                // "8": { "name": "entity.other.attribute-name.localname.mivascript" },
+                "9": { "name": "string.quoted.double.mivascript" },
+                "10": { "name": "mivascript.function.mivascript" }
             },
             "end": ">",
             "endCaptures": {
