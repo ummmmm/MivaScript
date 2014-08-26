@@ -214,6 +214,6 @@
 		{ "trigger": "xml_parse_section_init", 			"contents": "xml_parse_section_init( ${1:filepath}, ${2:location}, ${3:level} )" },
 		{ "trigger": "xml_parse_section_setstate", 		"contents": "xml_parse_section_setstate( ${1:source var} )" },
 		{ "trigger": "xml_parse_set_colon_replacement", "contents": "xml_parse_set_colon_replacement( ${1:colon} )" },
-		{ "trigger": "xml_parse_var", 					"contents": "xml_parse_var( ${1:var var}, ${2:output var} )" },
+		{ "trigger": "xml_parse_var", 					"contents": "xml_parse_var( ${1:var var}, ${2:output var} )" }
 	]
 }
