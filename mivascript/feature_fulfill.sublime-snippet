@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Order Fulfillment Feature (fulfill)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "FulfillmentModule_ProcessOrder" PARAMETERS = "module var, order var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_fulfill</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
