@@ -6,7 +6,11 @@
 </MvCOMMENT>
 
 <MvFUNCTION NAME = "Module_Provision_Store" PARAMETERS = "module var, provide_xml var" STANDARDOUTPUTLEVEL = "">
-	${1}
+	<MvFOREACH ITERATOR = "l.child" ARRAY = "l.provide_xml:children">
+		<MvASSIGN NAME = "l.tag" VALUE = "{ tolower( l.child:name ) }">
+
+		${0}
+	</MvFOREACH>
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_provision_store</tabTrigger>
     <scope>source.mivascript</scope>
