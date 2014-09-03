@@ -16,6 +16,6 @@
 <MvFUNCTION NAME = "LogModule_UIException" PARAMETERS = "module var, code" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>]]></content>
-    <tabTrigger>log</tabTrigger>
+    <tabTrigger>feature_log</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>
