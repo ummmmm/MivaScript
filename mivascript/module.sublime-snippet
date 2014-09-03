@@ -4,8 +4,9 @@
 	<MvASSIGN NAME = "l.module:name"		VALUE = "${2}">
 	<MvASSIGN NAME = "l.module:provider"	VALUE = "${3:Miva Merchant}">
 	<MvASSIGN NAME = "l.module:version"		VALUE = "1.0000">
-	<MvASSIGN NAME = "l.module:api_ver"		VALUE = "${4:5.70}">
-	<MvASSIGN NAME = "l.module:features"	VALUE = "${5}">
+	<MvASSIGN NAME = "l.module:api_ver"		VALUE = "${4:5.72}">
+	<MvASSIGN NAME = "l.module:description"	VALUE = "${5}">
+	<MvASSIGN NAME = "l.module:features"	VALUE = "${6}">
 </MvFUNCTION>
 ]]></content>
     <tabTrigger>module</tabTrigger>
