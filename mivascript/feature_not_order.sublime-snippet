@@ -6,6 +6,9 @@
 </MvCOMMENT>
 
 <MvFUNCTION NAME = "Module_Notify_Order_StatusChange" PARAMETERS = "module var, original_status, order var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_Order_BatchChange" PARAMETERS = "module var, order_count, original_orders var, orders var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_not_order</tabTrigger>
     <scope>source.mivascript</scope>
