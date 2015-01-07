@@ -1,0 +1,42 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Discounting Subsystem Feature (discount)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "DiscountModule_Capabilities" PARAMETERS = "module var, capabilities var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.capabilities:items"					VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:basket"				VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:shipping"				VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:tax"					VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:provision_settings"	VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DiscountModule_Fields" PARAMETERS = "module var, pricegroup var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DiscountModule_Invalid" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DiscountModule_Prompt" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DiscountModule_Field" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DiscountModule_Validate" PARAMETERS = "module var, pricegroup var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DiscountModule_Update" PARAMETERS = "module var, pricegroup var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+]]></content>
+    <tabTrigger>feature_discount</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
