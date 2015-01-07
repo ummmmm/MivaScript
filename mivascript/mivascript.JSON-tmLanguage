@@ -69,6 +69,11 @@
             "name": "keyword.operator.bitwise.mivascript"
         },
         {
+            "comment": "Numeric constants",
+            "match": "\\b((0x[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b",
+            "name": "constant.numeric.php"
+        },
+        {
             "match": "\\$",
             "name": "keyword.operator.string.mivascript"
         },
