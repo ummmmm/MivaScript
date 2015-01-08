@@ -60,7 +60,7 @@
         },
         {
             "comment": "Logical Operators",
-            "match": "\\b(NOT|AND|OR|ISNULL)\\b",
+            "match": "\\b(NOT|AND|OR|ISNULL|IN|CIN|EIN|ECIN|CRYPT)\\b",
             "name": "keyword.operator.logical.mivascript"
         },
         {
@@ -71,7 +71,12 @@
         {
             "comment": "Numeric constants",
             "match": "\\b((0x[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b",
-            "name": "constant.numeric.php"
+            "name": "constant.numeric.mivascript"
+        },
+        {
+            "comment": "Arithmetic operators",
+            "match": "\\+|\\-|\\*|/|MOD|POW|ROUND",
+            "name": "keyword.operator.arithmetic.mivascript"
         },
         {
             "match": "\\$",

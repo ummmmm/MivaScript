@@ -127,7 +127,7 @@
 			<key>comment</key>
 			<string>Logical Operators</string>
 			<key>match</key>
-			<string>\b(NOT|AND|OR|ISNULL)\b</string>
+			<string>\b(NOT|AND|OR|ISNULL|IN|CIN|EIN|ECIN|CRYPT)\b</string>
 			<key>name</key>
 			<string>keyword.operator.logical.mivascript</string>
 		</dict>
@@ -145,7 +145,15 @@
 			<key>match</key>
 			<string>\b((0x[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)\b</string>
 			<key>name</key>
-			<string>constant.numeric.php</string>
+			<string>constant.numeric.mivascript</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Arithmetic operators</string>
+			<key>match</key>
+			<string>\+|\-|\*|/|MOD|POW|ROUND</string>
+			<key>name</key>
+			<string>keyword.operator.arithmetic.mivascript</string>
 		</dict>
 		<dict>
 			<key>match</key>
