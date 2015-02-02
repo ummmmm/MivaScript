@@ -167,6 +167,7 @@
 		{ "trigger": "rtrim", 							"contents": "rtrim( ${1:string} )" },
 		{ "trigger": "schmod", 							"contents": "schmod( ${1:path}, ${2:mode} )" },
 		{ "trigger": "scopy", 							"contents": "scopy( ${1:source}, ${2:destination} )" },
+		{ "trigger": "sdelete", 						"contents": "sdelete( ${1:path } )" },
 		{ "trigger": "sexists", 						"contents": "sexists( ${1:path } )" },
 		{ "trigger": "sfrename", 						"contents": "sfrename( ${1:source}, ${2:destination} )" },
 		{ "trigger": "sin", 							"contents": "sin( ${1:number} )" },
