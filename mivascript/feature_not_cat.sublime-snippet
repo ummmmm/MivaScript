@@ -8,6 +8,9 @@
 <MvFUNCTION NAME = "Module_Notify_Category_Insert" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>
 
+<MvFUNCTION NAME = "Module_Notify_Category_Update" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "Module_Notify_Category_Delete" PARAMETERS = "module var, category var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_not_cat</tabTrigger>
