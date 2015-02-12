@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<MvCOMMENT>
+|
+| Image Change Notification Feature (not_image)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_Image_Insert" PARAMETERS = "module var, image var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_Image_Delete" PARAMETERS = "module var, image var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+]]></content>
+	<tabTrigger>feature_not_image</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
