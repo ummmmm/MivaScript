@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Gift Certificate Notification Feature (not_giftcert)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_GiftCertificate_Created" PARAMETERS = "module var, giftcert var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_GiftCertificate_Redeemed" PARAMETERS = "module var, customer var, giftcert var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_GiftCertificate_Deleted" PARAMETERS = "module var, giftcert var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_not_giftcert</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
