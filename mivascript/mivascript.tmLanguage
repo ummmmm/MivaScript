@@ -163,7 +163,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;Mv[A-Z]+)</string>
+			<string>(&lt;M(v[A-Z]+|IVA))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>

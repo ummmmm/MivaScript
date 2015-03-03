@@ -83,8 +83,8 @@
             "name": "keyword.operator.string.mivascript"
         },
         {
-            "comment": "Mathces opening Mv* tags",
-            "begin": "(<Mv[A-Z]+)",
+            "comment": "Mathces opening Mv* / MIVA tags",
+            "begin": "(<M(v[A-Z]+|IVA))",
             "beginCaptures": {
                 "1": { "name": "keyword.control.mivascript" }
             },
