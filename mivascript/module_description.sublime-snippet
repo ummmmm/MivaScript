@@ -9,6 +9,6 @@
 	<MvASSIGN NAME = "l.module:features"	VALUE = "${6}">
 </MvFUNCTION>
 ]]></content>
-    <tabTrigger>module</tabTrigger>
+    <tabTrigger>module_description</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>
