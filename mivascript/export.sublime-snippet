@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MvEXPORT FILE = "${1}" FIELDS = "${2}" DELIMITER = "${3}">]]></content>
+    <tabTrigger>export</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
