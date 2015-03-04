@@ -9,7 +9,7 @@
 	<key>firstLineMatch</key>
 	<string>^&lt;MIVA </string>
 	<key>name</key>
-	<string>Miva Script</string>
+	<string>MivaScript</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -173,7 +173,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>Mathces opening Mv* tags</string>
+			<string>Mathces opening Mv* / MIVA tags</string>
 			<key>end</key>
 			<string>&gt;</string>
 			<key>endCaptures</key>
