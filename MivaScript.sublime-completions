@@ -125,6 +125,8 @@
 		{ "trigger": "miva_getvarlist", 				"contents": "miva_getvarlist( ${1:scope} )" },
 		{ "trigger": "miva_hex_decode", 				"contents": "miva_hex_decode( ${1:data} )" },
 		{ "trigger": "miva_hex_encode", 				"contents": "miva_hex_encode( ${1:data} )" },
+		{ "trigger": "miva_json_decode", 				"contents": "miva_json_decode( ${1:data}, ${2:output var} )" },
+		{ "trigger": "miva_json_decode_last_error", 	"contents": "miva_json_decode_last_error()" },
 		{ "trigger": "miva_lockfile", 					"contents": "miva_lockfile( ${1:path}, ${2:location} )" },
 		{ "trigger": "miva_member_exists", 				"contents": "miva_member_exists( ${1:structure var}, ${2:member} )" },
 		{ "trigger": "miva_openlog", 					"contents": "miva_openlog( ${1:ident}, ${2:logopt}, ${3:facility} )" },
