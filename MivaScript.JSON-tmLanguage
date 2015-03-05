@@ -25,7 +25,7 @@
             "comment": "Match the MvFUNCTION",
             "begin": "(?i)(<MvFUNCTION)\\s+(?:(NAME)\\s*=\\s*\"(\\w+)\")(?:\\s*(PARAMETERS)\\s*=\\s*\"(.*?)\")?(?:\\s*(STANDARDOUTPUTLEVEL)\\s*=\\s*(\".*?\"))?(?:\\s*(ERROROUTPUTLEVEL)\\s*=\\s*(\".*?\"))?|(</MvFUNCTION)",
             "beginCaptures": {
-                "1": { "name": "mivascript.function.mivascript" },
+                "1": { "name": "storage.type.function.mivascript" },
                 // "2": { "name": "entity.other.attribute-name.localname.mivascript" },
                 "3": { "name": "entity.name.function.mivascript" },
                 // "4": { "name": "entity.other.attribute-name.localname.mivascript" },
@@ -34,11 +34,11 @@
                 "7": { "name": "string.quoted.double.mivascript" },
                 // "8": { "name": "entity.other.attribute-name.localname.mivascript" },
                 "9": { "name": "string.quoted.double.mivascript" },
-                "10": { "name": "mivascript.function.mivascript" }
+                "10": { "name": "storage.type.function.mivascript" }
             },
             "end": ">",
             "endCaptures": {
-                "0": { "name": "mivascript.function.mivascript" }
+                "0": { "name": "storage.type.function.mivascript" }
             }
         },
         {
@@ -116,7 +116,7 @@
             "comment": "MvDOs",
             "begin": "(?<=\\s)(\\[.*?\\])\\.([A-Za-z0-9_]+)(?=\\()",
             "beginCaptures": {
-                "1": { "name": "mivascript.mvdo.mivascript" },
+                "1": { "name": "mvdo.mivascript" },
                 "2": { "name": "support.function.file.mivascript" }
             },
             "patterns": [

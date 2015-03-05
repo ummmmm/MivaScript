@@ -269,7 +269,7 @@
 			<key>name</key>
 			<string>MvFunction</string>
 			<key>scope</key>
-			<string>mivascript.function</string>
+			<string>storage.type.function.mivascript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -282,26 +282,13 @@
 			<key>name</key>
 			<string>MvDO</string>
 			<key>scope</key>
-			<string>mivascript.mvdo</string>
+			<string>mvdo.mivascript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
 				<string>#8aa2fd</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>MvDO</string>
-			<key>scope</key>
-			<string>errorcodes</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#FAFA02</string>
 			</dict>
 		</dict>
 	</array>

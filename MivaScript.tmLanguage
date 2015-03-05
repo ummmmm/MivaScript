@@ -52,12 +52,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>mivascript.function.mivascript</string>
+					<string>storage.type.function.mivascript</string>
 				</dict>
 				<key>10</key>
 				<dict>
 					<key>name</key>
-					<string>mivascript.function.mivascript</string>
+					<string>storage.type.function.mivascript</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -89,7 +89,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>mivascript.function.mivascript</string>
+					<string>storage.type.function.mivascript</string>
 				</dict>
 			</dict>
 		</dict>
@@ -231,7 +231,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>mivascript.mvdo.mivascript</string>
+					<string>mvdo.mivascript</string>
 				</dict>
 				<key>2</key>
 				<dict>

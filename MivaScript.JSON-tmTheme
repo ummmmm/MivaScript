@@ -163,7 +163,7 @@
         },
         {
             "name": "MvFunction",
-            "scope": "mivascript.function",
+            "scope": "storage.type.function.mivascript",
             "settings": {
                 "fontStyle": "bold",
                 "foreground": "#CC2121"
@@ -171,18 +171,10 @@
         },
         {
             "name": "MvDO",
-            "scope": "mivascript.mvdo",
+            "scope": "mvdo.mivascript",
             "settings": {
                 "fontStyle": "",
                 "foreground": "#8aa2fd"
-            }
-        },
-        {
-            "name": "MvDO",
-            "scope": "errorcodes",
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#FAFA02"
             }
         }
     ],
