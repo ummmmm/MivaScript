@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| SEO Settings Change Notification Feature (not_seo)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_SEOSettings" PARAMETERS = "module var, seo_settings var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_not_seo</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
