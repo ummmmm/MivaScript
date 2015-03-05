@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Component Provision Feature (component_prov)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "ComponentModule_Provision" PARAMETERS = "module var, provide_xml var, settings var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_component_prov</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

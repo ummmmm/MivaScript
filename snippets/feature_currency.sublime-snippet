@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Currency Feature (currency)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "CurrencyModule_AddFormatting" PARAMETERS = "module var, value" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "CurrencyModule_AddFormatPlainText" PARAMETERS = "module var, value" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "CurrencyModule_AddFormatPlainTextShort" PARAMETERS = "module var, value" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_currency</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

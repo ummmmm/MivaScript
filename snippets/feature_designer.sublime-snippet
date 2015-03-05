@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Designer Feature (designer)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "DesignerComponentModule_Export" PARAMETERS = "module var, page var, output_root_option, output_dir, extfile_dir, item, all_settings var, settings var, param, output_type var, start_data var, end_data var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "DesignerComponentModule_ImportProvisionLines" PARAMETERS = "module var, page_code, name, param, settings" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_designer</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
