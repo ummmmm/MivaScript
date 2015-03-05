@@ -1,12 +1,10 @@
-Miva Merchant Sublime Text 2 & 3
+MivaScript Sublime Text Plugin
 ================================
 
-Place the "mivascript" folder in your Sublime Text 2/3 User Package directory:
+Place the MivaScript folder in one of the following directories:
 
-Ubuntu: ~/.config/sublime-text-\*/Packages/User/
+Ubuntu: ~/.config/sublime-text-3/Packages/
 
-Windows: C:\Users\USERNAME\AppData\Roaming\Sublime Text *\Packages\User\
+OS X: ~/Library/Application Support/Sublime Text 3/Packages/
 
-Put the Custom Themes folder in ~/.config/sublime-text-\*/Packages directory
-
-The fingertext_to_sublime.php tool can be used to extract FingerText snippets from an sqlite database and convert them to the appropriate file format for sublime. The \*.sublime-snippet files should be placed in the ~/.config/sublime-text-\*/Packages/User/mivascript directory.
+Windows: %APPDATA%\Sublime Text 3\Packages\
