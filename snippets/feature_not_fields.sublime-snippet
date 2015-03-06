@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Customer Field Configuration Change Notification Feature (not_fields)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_StandardFields" PARAMETERS = "module var, standardfields var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_not_fields</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
