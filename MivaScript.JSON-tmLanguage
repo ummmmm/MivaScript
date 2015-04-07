@@ -4,14 +4,67 @@
     "fileTypes": [ "mv" ],
     "uuid": "1a3a4d44-98f3-4d0f-a124-520edd1d96c9",
     "firstLineMatch": "^<MIVA ",
-    "patterns": [
-        {
-            "comment": "Built-in Miva functions",
-            "match": "(?i)\\b(abs|acos|asciichar|asciivalue|asin|atan|atan2|bf_decrypt|bf_encrypt|ceil|cos|cosh|crypto_base64_decode|crypto_base64_encode|crypto_cipher_block_size|crypto_cipher_iv_length|crypto_cipher_key_length|crypto_cipher_mode|crypto_digest_block_size|crypto_digest_size|crypto_evp_decrypt|crypto_evp_digest|crypto_evp_encrypt|crypto_evp_hmac|crypto_hmac_md5|crypto_hmac_sha1|crypto_hmac_sha256|crypto_last_error|crypto_last_ssl_error|crypto_library_version|crypto_md5|crypto_md5_file|crypto_pbkdf1|crypto_pbkdf2|crypto_rand_bytes|crypto_sha1|crypto_sha256|crypto_xor|decodeattribute|decodeentities|dir|encodeattribute|encodeentities|exp|fchmod|fcopy|fdelete|fexists|file_append|file_create|file_read|file_read_bytes|fisdir|floor|fmkdir|fmod|fmode|frename|fscopy|fsize|fsrename|fsymlink|ftime|gettoken|glosub|glosub_array|indexof|indexofi|int|isalnum|isalpha|isascii|iscntrl|isdigit|isgraph|islower|isprint|ispunct|isspace|isupper|isxdigit|keyword_extract|keyword_extract_merge|keyword_extract_merge_init|keyword_extract_merge_results|keyword_in|len|len_var|log|log10|ltrim|makesessionid|miva_array_binarysearch|miva_array_clear|miva_array_collapse|miva_array_copy|miva_array_copy_ref|miva_array_delete|miva_array_deserialize|miva_array_elements|miva_array_find|miva_array_insert|miva_array_insert_ref|miva_array_insert_var|miva_array_max|miva_array_merge|miva_array_merge_ref|miva_array_min|miva_array_next|miva_array_pop|miva_array_pop_ref|miva_array_previous|miva_array_search|miva_array_serialize|miva_array_shift|miva_array_shift_ref|miva_array_sort|miva_closelog|miva_element_exists|miva_getvarlist|miva_hex_decode|miva_hex_encode|miva_json_decode|miva_json_decode_last_error|miva_lockfile|miva_member_exists|miva_openlog|miva_output_flush|miva_output_header|miva_setdefaultdatabase|miva_setdefaultlanguage|miva_setlanguage|miva_setlogmask|miva_sleep|miva_struct_members|miva_template_compile|miva_template_compile_dump|miva_template_compile_itemlist|miva_variable_value|miva_writelog|mktime_t|padl|padr|power|random|rnd|rsa_free|rsa_generate_keypair|rsa_generate_keypair_mem|rsa_generate_keypair_mem_cipher|rsa_load_privatekey|rsa_load_privatekey_mem|rsa_load_publickey|rsa_load_publickey_mem|rsa_private_decrypt|rsa_private_encrypt|rsa_public_decrypt|rsa_public_encrypt|rsa_save_privatekey|rsa_save_privatekey_mem|rsa_save_privatekey_mem_cipher|rsa_sign|rsa_verify|rtrim|schmod|scopy|sdelete|sexists|sfrename|sin|sinh|sisdir|smkdir|smode|sqrt|srandom|srename|ssize|ssymlink|stime|substring|substring_var|tan|tanh|tar_create|tar_directory|tar_extract|time_t_dayofmonth|time_t_dayofweek|time_t_dayofyear|time_t_hour|time_t_min|time_t_month|time_t_sec|time_t_year|timezone|tokenize|tolower|toupper|trim|wdownload|wget|x509_create|x509_free|x509_load|x509_rsa_publickey|x509_verify|xml_parse|xml_parse_error|xml_parse_section|xml_parse_section_getstate|xml_parse_section_init|xml_parse_section_setstate|xml_parse_set_colon_replacement|xml_parse_var)\\b(?=\\()",
-            "captures": {
-                "1": { "name": "constant.language.mivascript" }
-            }
+    "repository": {
+        "MivaComparisonOperators": {
+            "comment": "Comparison Operators",
+            "match": "\\b(EQ|GT|LT|NE|GE|LE)\\b",
+            "name": "keyword.operator.comparison.mivascript"
         },
+        "MivaLogicalOperators": {
+            "comment": "Logical Operators",
+            "match": "\\b(NOT|AND|OR|ISNULL|IN|CIN|EIN|ECIN|CRYPT)\\b",
+            "name": "keyword.operator.logical.mivascript"
+        },
+        "MivaNumericOperators": {
+            "comment": "Numeric constants",
+            "match": "\\b((0x[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b",
+            "name": "constant.numeric.mivascript"
+        },
+        "MivaBitwiseOperators": {
+            "comment": "Bitwise Operators",
+            "match": "\\b(BIT(AND|OR|XOR|OC|SL|SR))\\b",
+            "name": "keyword.operator.bitwise.mivascript"
+        },
+        "MivaArithmeticOperators": {
+            "comment": "Arithmetic operators",
+            "match": "\\+|\\-|\\*|/|MOD|POW|ROUND",
+            "name": "keyword.operator.arithmetic.mivascript"
+        },
+        "MivaDollarOperators": {
+            "match": "\\$",
+            "name": "keyword.operator.string.mivascript"
+        },
+        "MivaSingleQuotedString": {
+            "name": "string.quoted.double.mivascript",
+            "begin": "'",
+            "end": "'",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.mivascript", 
+                    "match": "\\\\{2}", 
+                    "comment": "Escaped from the PHP string \u2013 there can also be 2 backslashes (since 1 will escape the first)"
+                },
+                {
+                    "name": "constant.character.escape.mivascript", 
+                    "match": "\\\\'", 
+                    "comment": "Escaped from the PHP string \u2013 there can also be 2 backslashes (since 1 will escape the first)"
+                }
+            ]
+        },
+        "MivaFormattingSingleSpace": {
+            "name": "mivascript.invalid_formatting.space_container.mivascript",
+            "comment": "Shows invalid formatting for white space",
+            "match": "(?:(\\()(?!(?:\\)|\\s(?!\\))))|(?<!\\(|(?<!\\()\\s)(\\)))",
+            "captures": {
+                "1": { "name": "mivascript.invalid_formatting.space.mivascript" },
+                "2": { "name": "mivascript.invalid_formatting.space.mivascript" }
+            },
+            "patterns": [
+                { "include": "$self" }
+            ]
+        }
+    },
+    "patterns": [
         {
             "comment": "Match any MvCOMMENT blocks",
             "name": "comment.block.mivascript",
@@ -20,6 +73,57 @@
                 "0": { "name": "punctuation.definition.comment.mivascript" }
             },
             "end": "</MvCOMMENT>"
+        },
+        {
+            "comment": "Match single quoted strings within MivaScript Expression blocks",
+            "name": "mivascript.expression.container.mivascript",
+            "begin": "(?:(\"\\{)(?:\\s)|(\"\\{)(?:[^\\s]))",
+            "beginCaptures": {
+                "1": { "name": "mivascript.expression.container.mivascript" },
+                "2": { "name": "mivascript.invalid_formatting.space.mivascript" }
+            },
+            "end": "(?:(?:\\s)(\\}\")|(?:[^\\s])(\\}\"))",
+            "endCaptures": {
+                "1": { "name": "mivascript.expression.container.mivascript" },
+                "2": { "name": "mivascript.invalid_formatting.space.mivascript" }
+            },
+            "patterns": [
+                { "include": "$self" },
+                { "include": "#MivaComparisonOperators" },
+                { "include": "#MivaLogicalOperators" },
+                { "include": "#MivaNumericOperators" },
+                { "include": "#MivaBitwiseOperators" },
+                { "include": "#MivaArithmeticOperators" },
+                { "include": "#MivaDollarOperators" },
+                { "include": "#MivaSingleQuotedString" },
+                { "include": "#MivaFormattingSingleSpace" }
+            ]
+        },
+        {
+            "comment": "Double Quoted Strings",
+            "name": "string.quoted.double.mivascript",
+            "begin": "(\")",
+            "beginCaptures": {
+                "1": { "name": "punctuation.definition.string.begin.mivascript" }
+            },
+            "patterns": [
+                {
+                    "match": "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
+                    "name": "constant.character.escape.mivascript"
+                },
+                { "include": "$self" }
+            ],
+            "endCaptures": {
+                "0": { "name": "punctuation.definition.string.end.mivascript" }
+            },
+            "end": "\""
+        },
+        {
+            "comment": "Built-in Miva functions",
+            "match": "(?i)\\b(abs|acos|asciichar|asciivalue|asin|atan|atan2|bf_decrypt|bf_encrypt|ceil|cos|cosh|crypto_base64_decode|crypto_base64_encode|crypto_cipher_block_size|crypto_cipher_iv_length|crypto_cipher_key_length|crypto_cipher_mode|crypto_digest_block_size|crypto_digest_size|crypto_evp_decrypt|crypto_evp_digest|crypto_evp_encrypt|crypto_evp_hmac|crypto_hmac_md5|crypto_hmac_sha1|crypto_hmac_sha256|crypto_last_error|crypto_last_ssl_error|crypto_library_version|crypto_md5|crypto_md5_file|crypto_pbkdf1|crypto_pbkdf2|crypto_rand_bytes|crypto_sha1|crypto_sha256|crypto_xor|decodeattribute|decodeentities|dir|encodeattribute|encodeentities|exp|fchmod|fcopy|fdelete|fexists|file_append|file_create|file_read|file_read_bytes|fisdir|floor|fmkdir|fmod|fmode|frename|fscopy|fsize|fsrename|fsymlink|ftime|gettoken|glosub|glosub_array|indexof|indexofi|int|isalnum|isalpha|isascii|iscntrl|isdigit|isgraph|islower|isprint|ispunct|isspace|isupper|isxdigit|keyword_extract|keyword_extract_merge|keyword_extract_merge_init|keyword_extract_merge_results|keyword_in|len|len_var|log|log10|ltrim|makesessionid|miva_array_binarysearch|miva_array_clear|miva_array_collapse|miva_array_copy|miva_array_copy_ref|miva_array_delete|miva_array_deserialize|miva_array_elements|miva_array_find|miva_array_insert|miva_array_insert_ref|miva_array_insert_var|miva_array_max|miva_array_merge|miva_array_merge_ref|miva_array_min|miva_array_next|miva_array_pop|miva_array_pop_ref|miva_array_previous|miva_array_search|miva_array_serialize|miva_array_shift|miva_array_shift_ref|miva_array_sort|miva_closelog|miva_element_exists|miva_getvarlist|miva_hex_decode|miva_hex_encode|miva_json_decode|miva_json_decode_last_error|miva_lockfile|miva_member_exists|miva_openlog|miva_output_flush|miva_output_header|miva_setdefaultdatabase|miva_setdefaultlanguage|miva_setlanguage|miva_setlogmask|miva_sleep|miva_struct_members|miva_template_compile|miva_template_compile_dump|miva_template_compile_itemlist|miva_variable_value|miva_writelog|mktime_t|padl|padr|power|random|rnd|rsa_free|rsa_generate_keypair|rsa_generate_keypair_mem|rsa_generate_keypair_mem_cipher|rsa_load_privatekey|rsa_load_privatekey_mem|rsa_load_publickey|rsa_load_publickey_mem|rsa_private_decrypt|rsa_private_encrypt|rsa_public_decrypt|rsa_public_encrypt|rsa_save_privatekey|rsa_save_privatekey_mem|rsa_save_privatekey_mem_cipher|rsa_sign|rsa_verify|rtrim|schmod|scopy|sdelete|sexists|sfrename|sin|sinh|sisdir|smkdir|smode|sqrt|srandom|srename|ssize|ssymlink|stime|substring|substring_var|tan|tanh|tar_create|tar_directory|tar_extract|time_t_dayofmonth|time_t_dayofweek|time_t_dayofyear|time_t_hour|time_t_min|time_t_month|time_t_sec|time_t_year|timezone|tokenize|tolower|toupper|trim|wdownload|wget|x509_create|x509_free|x509_load|x509_rsa_publickey|x509_verify|xml_parse|xml_parse_error|xml_parse_section|xml_parse_section_getstate|xml_parse_section_init|xml_parse_section_setstate|xml_parse_set_colon_replacement|xml_parse_var)\\b(?=\\()",
+            "captures": {
+                "1": { "name": "constant.language.mivascript" }
+            }
         },
         {
             "comment": "Match the MvFUNCTION",
@@ -54,35 +158,6 @@
             }
         },
         {
-            "comment": "Comparison Operators",
-            "match": "\\b(EQ|GT|LT|NE|GE|LE)\\b",
-            "name": "keyword.operator.comparison.mivascript"
-        },
-        {
-            "comment": "Logical Operators",
-            "match": "\\b(NOT|AND|OR|ISNULL|IN|CIN|EIN|ECIN|CRYPT)\\b",
-            "name": "keyword.operator.logical.mivascript"
-        },
-        {
-            "comment": "Bitwise Operators",
-            "match": "\\b(BIT(AND|OR|XOR|OC|SL|SR))\\b",
-            "name": "keyword.operator.bitwise.mivascript"
-        },
-        {
-            "comment": "Numeric constants",
-            "match": "\\b((0x[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b",
-            "name": "constant.numeric.mivascript"
-        },
-        {
-            "comment": "Arithmetic operators",
-            "match": "\\+|\\-|\\*|/|MOD|POW|ROUND",
-            "name": "keyword.operator.arithmetic.mivascript"
-        },
-        {
-            "match": "\\$",
-            "name": "keyword.operator.string.mivascript"
-        },
-        {
             "comment": "Mathces opening Mv* / MIVA tags",
             "begin": "(<M(v[A-Z]+|IVA))",
             "beginCaptures": {
@@ -101,63 +176,18 @@
             "match": "</Mv[A-Z]+>",
             "name": "keyword.control.mivascript"
         },
-        {
+         {
             "comment": "Functions Calls",
-            "begin": "([A-Za-z0-9_]+)(?=\\()",
-            "beginCaptures": {
+            "match": "([A-Za-z0-9_]+)(?=\\()",
+            "captures": {
                 "1": { "name": "support.function.file.mivascript" }
-            },
-            "patterns": [
-                { "include": "$self" }
-            ],
-            "end": "\\)"
-        },
-        {
-            "comment": "MvDOs",
-            "begin": "(?<=\\s)(\\[.*?\\])\\.([A-Za-z0-9_]+)(?=\\()",
-            "beginCaptures": {
-                "1": { "name": "mvdo.mivascript" },
-                "2": { "name": "support.function.file.mivascript" }
-            },
-            "patterns": [
-                { "include": "$self" }
-            ],
-            "end": "\\)"
-        },
-        {
-            "comment": "Single Quoted Strings",
-            "name": "string.quoted.single.mivascript",
-            "begin": "'",
-            "beginCaptures": {
-                "0": { "name": "punctuation.definition.string.begin.mivascript" }
-            },
-            "patterns": [
-                {
-                    "match": "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
-                    "name": "constant.character.escape.mivascript"
-                }
-            ],
-            "end": "'",
-            "endCaptures": {
-                "0": { "name": "punctuation.definition.string.end.mivascript" }
             }
         },
         {
-            "comment": "Double Quoted Strings",
-            "name": "string.quoted.double.mivascript",
-            "begin": "\"\\w+",
-            "beginCaptures": {
-                "0": { "name": "punctuation.definition.string.begin.mivascript" }
-            },
-            "patterns": [
-                {
-                    "match": "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
-                    "name": "constant.character.escape.mivascript"
-                }
-            ],
-            "end": "\"",
-            "endCaptures": {
-                "0": { "name": "punctuation.definition.string.end.mivascript" }
+            "comment": "MvDOs",
+            "match": "(?<=\\s)(\\[.*?\\])\\.",
+            "captures": {
+                "1": { "name": "mvdo.mivascript" }
             }
         }
     ]

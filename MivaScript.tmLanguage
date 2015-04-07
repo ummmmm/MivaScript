@@ -13,20 +13,6 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language.mivascript</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Built-in Miva functions</string>
-			<key>match</key>
-			<string>(?i)\b(abs|acos|asciichar|asciivalue|asin|atan|atan2|bf_decrypt|bf_encrypt|ceil|cos|cosh|crypto_base64_decode|crypto_base64_encode|crypto_cipher_block_size|crypto_cipher_iv_length|crypto_cipher_key_length|crypto_cipher_mode|crypto_digest_block_size|crypto_digest_size|crypto_evp_decrypt|crypto_evp_digest|crypto_evp_encrypt|crypto_evp_hmac|crypto_hmac_md5|crypto_hmac_sha1|crypto_hmac_sha256|crypto_last_error|crypto_last_ssl_error|crypto_library_version|crypto_md5|crypto_md5_file|crypto_pbkdf1|crypto_pbkdf2|crypto_rand_bytes|crypto_sha1|crypto_sha256|crypto_xor|decodeattribute|decodeentities|dir|encodeattribute|encodeentities|exp|fchmod|fcopy|fdelete|fexists|file_append|file_create|file_read|file_read_bytes|fisdir|floor|fmkdir|fmod|fmode|frename|fscopy|fsize|fsrename|fsymlink|ftime|gettoken|glosub|glosub_array|indexof|indexofi|int|isalnum|isalpha|isascii|iscntrl|isdigit|isgraph|islower|isprint|ispunct|isspace|isupper|isxdigit|keyword_extract|keyword_extract_merge|keyword_extract_merge_init|keyword_extract_merge_results|keyword_in|len|len_var|log|log10|ltrim|makesessionid|miva_array_binarysearch|miva_array_clear|miva_array_collapse|miva_array_copy|miva_array_copy_ref|miva_array_delete|miva_array_deserialize|miva_array_elements|miva_array_find|miva_array_insert|miva_array_insert_ref|miva_array_insert_var|miva_array_max|miva_array_merge|miva_array_merge_ref|miva_array_min|miva_array_next|miva_array_pop|miva_array_pop_ref|miva_array_previous|miva_array_search|miva_array_serialize|miva_array_shift|miva_array_shift_ref|miva_array_sort|miva_closelog|miva_element_exists|miva_getvarlist|miva_hex_decode|miva_hex_encode|miva_json_decode|miva_json_decode_last_error|miva_lockfile|miva_member_exists|miva_openlog|miva_output_flush|miva_output_header|miva_setdefaultdatabase|miva_setdefaultlanguage|miva_setlanguage|miva_setlogmask|miva_sleep|miva_struct_members|miva_template_compile|miva_template_compile_dump|miva_template_compile_itemlist|miva_variable_value|miva_writelog|mktime_t|padl|padr|power|random|rnd|rsa_free|rsa_generate_keypair|rsa_generate_keypair_mem|rsa_generate_keypair_mem_cipher|rsa_load_privatekey|rsa_load_privatekey_mem|rsa_load_publickey|rsa_load_publickey_mem|rsa_private_decrypt|rsa_private_encrypt|rsa_public_decrypt|rsa_public_encrypt|rsa_save_privatekey|rsa_save_privatekey_mem|rsa_save_privatekey_mem_cipher|rsa_sign|rsa_verify|rtrim|schmod|scopy|sdelete|sexists|sfrename|sin|sinh|sisdir|smkdir|smode|sqrt|srandom|srename|ssize|ssymlink|stime|substring|substring_var|tan|tanh|tar_create|tar_directory|tar_extract|time_t_dayofmonth|time_t_dayofweek|time_t_dayofyear|time_t_hour|time_t_min|time_t_month|time_t_sec|time_t_year|timezone|tokenize|tolower|toupper|trim|wdownload|wget|x509_create|x509_free|x509_load|x509_rsa_publickey|x509_verify|xml_parse|xml_parse_error|xml_parse_section|xml_parse_section_getstate|xml_parse_section_init|xml_parse_section_setstate|xml_parse_set_colon_replacement|xml_parse_var)\b(?=\()</string>
-		</dict>
-		<dict>
 			<key>begin</key>
 			<string>&lt;MvCOMMENT&gt;</string>
 			<key>captures</key>
@@ -43,6 +29,134 @@
 			<string>&lt;/MvCOMMENT&gt;</string>
 			<key>name</key>
 			<string>comment.block.mivascript</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(?:("\{)(?:\s)|("\{)(?:[^\s]))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.expression.container.mivascript</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.invalid_formatting.space.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Match single quoted strings within MivaScript Expression blocks</string>
+			<key>end</key>
+			<string>(?:(?:\s)(\}")|(?:[^\s])(\}"))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.expression.container.mivascript</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.invalid_formatting.space.mivascript</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>mivascript.expression.container.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaComparisonOperators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaLogicalOperators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaNumericOperators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaBitwiseOperators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaArithmeticOperators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaDollarOperators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaSingleQuotedString</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#MivaFormattingSingleSpace</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(")</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Double Quoted Strings</string>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.mivascript</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.mivascript</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
+					<key>name</key>
+					<string>constant.character.escape.mivascript</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Built-in Miva functions</string>
+			<key>match</key>
+			<string>(?i)\b(abs|acos|asciichar|asciivalue|asin|atan|atan2|bf_decrypt|bf_encrypt|ceil|cos|cosh|crypto_base64_decode|crypto_base64_encode|crypto_cipher_block_size|crypto_cipher_iv_length|crypto_cipher_key_length|crypto_cipher_mode|crypto_digest_block_size|crypto_digest_size|crypto_evp_decrypt|crypto_evp_digest|crypto_evp_encrypt|crypto_evp_hmac|crypto_hmac_md5|crypto_hmac_sha1|crypto_hmac_sha256|crypto_last_error|crypto_last_ssl_error|crypto_library_version|crypto_md5|crypto_md5_file|crypto_pbkdf1|crypto_pbkdf2|crypto_rand_bytes|crypto_sha1|crypto_sha256|crypto_xor|decodeattribute|decodeentities|dir|encodeattribute|encodeentities|exp|fchmod|fcopy|fdelete|fexists|file_append|file_create|file_read|file_read_bytes|fisdir|floor|fmkdir|fmod|fmode|frename|fscopy|fsize|fsrename|fsymlink|ftime|gettoken|glosub|glosub_array|indexof|indexofi|int|isalnum|isalpha|isascii|iscntrl|isdigit|isgraph|islower|isprint|ispunct|isspace|isupper|isxdigit|keyword_extract|keyword_extract_merge|keyword_extract_merge_init|keyword_extract_merge_results|keyword_in|len|len_var|log|log10|ltrim|makesessionid|miva_array_binarysearch|miva_array_clear|miva_array_collapse|miva_array_copy|miva_array_copy_ref|miva_array_delete|miva_array_deserialize|miva_array_elements|miva_array_find|miva_array_insert|miva_array_insert_ref|miva_array_insert_var|miva_array_max|miva_array_merge|miva_array_merge_ref|miva_array_min|miva_array_next|miva_array_pop|miva_array_pop_ref|miva_array_previous|miva_array_search|miva_array_serialize|miva_array_shift|miva_array_shift_ref|miva_array_sort|miva_closelog|miva_element_exists|miva_getvarlist|miva_hex_decode|miva_hex_encode|miva_json_decode|miva_json_decode_last_error|miva_lockfile|miva_member_exists|miva_openlog|miva_output_flush|miva_output_header|miva_setdefaultdatabase|miva_setdefaultlanguage|miva_setlanguage|miva_setlogmask|miva_sleep|miva_struct_members|miva_template_compile|miva_template_compile_dump|miva_template_compile_itemlist|miva_variable_value|miva_writelog|mktime_t|padl|padr|power|random|rnd|rsa_free|rsa_generate_keypair|rsa_generate_keypair_mem|rsa_generate_keypair_mem_cipher|rsa_load_privatekey|rsa_load_privatekey_mem|rsa_load_publickey|rsa_load_publickey_mem|rsa_private_decrypt|rsa_private_encrypt|rsa_public_decrypt|rsa_public_encrypt|rsa_save_privatekey|rsa_save_privatekey_mem|rsa_save_privatekey_mem_cipher|rsa_sign|rsa_verify|rtrim|schmod|scopy|sdelete|sexists|sfrename|sin|sinh|sisdir|smkdir|smode|sqrt|srandom|srename|ssize|ssymlink|stime|substring|substring_var|tan|tanh|tar_create|tar_directory|tar_extract|time_t_dayofmonth|time_t_dayofweek|time_t_dayofyear|time_t_hour|time_t_min|time_t_month|time_t_sec|time_t_year|timezone|tokenize|tolower|toupper|trim|wdownload|wget|x509_create|x509_free|x509_load|x509_rsa_publickey|x509_verify|xml_parse|xml_parse_error|xml_parse_section|xml_parse_section_getstate|xml_parse_section_init|xml_parse_section_setstate|xml_parse_set_colon_replacement|xml_parse_var)\b(?=\()</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -116,52 +230,6 @@
 			<string>\b([A-Z-]+\b)\s*=</string>
 		</dict>
 		<dict>
-			<key>comment</key>
-			<string>Comparison Operators</string>
-			<key>match</key>
-			<string>\b(EQ|GT|LT|NE|GE|LE)\b</string>
-			<key>name</key>
-			<string>keyword.operator.comparison.mivascript</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Logical Operators</string>
-			<key>match</key>
-			<string>\b(NOT|AND|OR|ISNULL|IN|CIN|EIN|ECIN|CRYPT)\b</string>
-			<key>name</key>
-			<string>keyword.operator.logical.mivascript</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Bitwise Operators</string>
-			<key>match</key>
-			<string>\b(BIT(AND|OR|XOR|OC|SL|SR))\b</string>
-			<key>name</key>
-			<string>keyword.operator.bitwise.mivascript</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Numeric constants</string>
-			<key>match</key>
-			<string>\b((0x[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)\b</string>
-			<key>name</key>
-			<string>constant.numeric.mivascript</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Arithmetic operators</string>
-			<key>match</key>
-			<string>\+|\-|\*|/|MOD|POW|ROUND</string>
-			<key>name</key>
-			<string>keyword.operator.arithmetic.mivascript</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\$</string>
-			<key>name</key>
-			<string>keyword.operator.string.mivascript</string>
-		</dict>
-		<dict>
 			<key>begin</key>
 			<string>(&lt;M(v[A-Z]+|IVA))</string>
 			<key>beginCaptures</key>
@@ -201,9 +269,7 @@
 			<string>keyword.control.mivascript</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>([A-Za-z0-9_]+)(?=\()</string>
-			<key>beginCaptures</key>
+			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -213,36 +279,81 @@
 			</dict>
 			<key>comment</key>
 			<string>Functions Calls</string>
-			<key>end</key>
-			<string>\)</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-			</array>
+			<key>match</key>
+			<string>([A-Za-z0-9_]+)(?=\()</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>(?&lt;=\s)(\[.*?\])\.([A-Za-z0-9_]+)(?=\()</string>
-			<key>beginCaptures</key>
+			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>mvdo.mivascript</string>
 				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.file.mivascript</string>
-				</dict>
 			</dict>
 			<key>comment</key>
 			<string>MvDOs</string>
-			<key>end</key>
-			<string>\)</string>
+			<key>match</key>
+			<string>(?&lt;=\s)(\[.*?\])\.</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>MivaArithmeticOperators</key>
+		<dict>
+			<key>comment</key>
+			<string>Arithmetic operators</string>
+			<key>match</key>
+			<string>\+|\-|\*|/|MOD|POW|ROUND</string>
+			<key>name</key>
+			<string>keyword.operator.arithmetic.mivascript</string>
+		</dict>
+		<key>MivaBitwiseOperators</key>
+		<dict>
+			<key>comment</key>
+			<string>Bitwise Operators</string>
+			<key>match</key>
+			<string>\b(BIT(AND|OR|XOR|OC|SL|SR))\b</string>
+			<key>name</key>
+			<string>keyword.operator.bitwise.mivascript</string>
+		</dict>
+		<key>MivaComparisonOperators</key>
+		<dict>
+			<key>comment</key>
+			<string>Comparison Operators</string>
+			<key>match</key>
+			<string>\b(EQ|GT|LT|NE|GE|LE)\b</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.mivascript</string>
+		</dict>
+		<key>MivaDollarOperators</key>
+		<dict>
+			<key>match</key>
+			<string>\$</string>
+			<key>name</key>
+			<string>keyword.operator.string.mivascript</string>
+		</dict>
+		<key>MivaFormattingSingleSpace</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.invalid_formatting.space.mivascript</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>mivascript.invalid_formatting.space.mivascript</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Shows invalid formatting for white space</string>
+			<key>match</key>
+			<string>(?:(\()(?!(?:\)|\s(?!\))))|(?&lt;!\(|(?&lt;!\()\s)(\)))</string>
+			<key>name</key>
+			<string>mivascript.invalid_formatting.space_container.mivascript</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -251,77 +362,53 @@
 				</dict>
 			</array>
 		</dict>
+		<key>MivaLogicalOperators</key>
 		<dict>
-			<key>begin</key>
-			<string>'</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.mivascript</string>
-				</dict>
-			</dict>
 			<key>comment</key>
-			<string>Single Quoted Strings</string>
-			<key>end</key>
-			<string>'</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.mivascript</string>
-				</dict>
-			</dict>
+			<string>Logical Operators</string>
+			<key>match</key>
+			<string>\b(NOT|AND|OR|ISNULL|IN|CIN|EIN|ECIN|CRYPT)\b</string>
 			<key>name</key>
-			<string>string.quoted.single.mivascript</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
-					<key>name</key>
-					<string>constant.character.escape.mivascript</string>
-				</dict>
-			</array>
+			<string>keyword.operator.logical.mivascript</string>
 		</dict>
+		<key>MivaNumericOperators</key>
+		<dict>
+			<key>comment</key>
+			<string>Numeric constants</string>
+			<key>match</key>
+			<string>\b((0x[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)\b</string>
+			<key>name</key>
+			<string>constant.numeric.mivascript</string>
+		</dict>
+		<key>MivaSingleQuotedString</key>
 		<dict>
 			<key>begin</key>
-			<string>"\w+</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.mivascript</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Double Quoted Strings</string>
+			<string>'</string>
 			<key>end</key>
-			<string>"</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.mivascript</string>
-				</dict>
-			</dict>
+			<string>'</string>
 			<key>name</key>
 			<string>string.quoted.double.mivascript</string>
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>comment</key>
+					<string>Escaped from the PHP string – there can also be 2 backslashes (since 1 will escape the first)</string>
 					<key>match</key>
-					<string>\\(x\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)</string>
+					<string>\\{2}</string>
+					<key>name</key>
+					<string>constant.character.escape.mivascript</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Escaped from the PHP string – there can also be 2 backslashes (since 1 will escape the first)</string>
+					<key>match</key>
+					<string>\\'</string>
 					<key>name</key>
 					<string>constant.character.escape.mivascript</string>
 				</dict>
 			</array>
 		</dict>
-	</array>
+	</dict>
 	<key>scopeName</key>
 	<string>source.mivascript</string>
 	<key>uuid</key>
