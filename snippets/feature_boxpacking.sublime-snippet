@@ -6,38 +6,38 @@
 |
 </MvCOMMENT>
 
-<MvFUNCTION NAME = "BoxPackingModule_Box_Delete" PARAMETERS = "module var, box_id" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = 1>
-</MvFUNCTION>
-
-<MvFUNCTION NAME = "BoxPackingModule_Box_Field" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
-</MvFUNCTION>
-
 <MvFUNCTION NAME = "BoxPackingModule_Box_Fields" PARAMETERS = "module var, box var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = "">
-</MvFUNCTION>
-
-<MvFUNCTION NAME = "BoxPackingModule_Box_Insert" PARAMETERS = "module var, box var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = 1>
-</MvFUNCTION>
-
-<MvFUNCTION NAME = "BoxPackingModule_Box_Invalid" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = 0>
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "BoxPackingModule_Box_Prompt" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>
 
+<MvFUNCTION NAME = "BoxPackingModule_Box_Field" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BoxPackingModule_Box_Invalid" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "BoxPackingModule_Box_Provision" PARAMETERS = "module var, box var, provider_xml var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BoxPackingModule_Box_Validate" PARAMETERS = "module var, box var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "BoxPackingModule_Box_Update" PARAMETERS = "module var, box var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "BoxPackingModule_Box_Validate" PARAMETERS = "module var, box var" STANDARDOUTPUTLEVEL = "">
+<MvFUNCTION NAME = "BoxPackingModule_Box_Insert" PARAMETERS = "module var, box var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "BoxPackingModule_Box_Delete" PARAMETERS = "module var, box_id" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
