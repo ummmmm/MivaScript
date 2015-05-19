@@ -5,6 +5,12 @@
 |
 </MvCOMMENT>
 
+<MvFUNCTION NAME = "Module_Notify_Order_Insert" PARAMETERS = "module var, order var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_Order_Delete" PARAMETERS = "module var, order var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "Module_Notify_Order_StatusChange" PARAMETERS = "module var, original_status, order var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>
 
