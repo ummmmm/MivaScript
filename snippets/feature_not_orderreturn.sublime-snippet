@@ -5,6 +5,12 @@
 |
 </MvCOMMENT>
 
+<MvFUNCTION NAME = "Module_Notify_OrderReturn_Insert" PARAMETERS = "module var, orderreturn var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_OrderReturn_Delete" PARAMETERS = "module var, orderreturn var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "Module_Notify_OrderReturn_StatusChange" PARAMETERS = "module var, orderreturn_count, original_orderreturns var, orderreturns var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_not_orderreturn</tabTrigger>
