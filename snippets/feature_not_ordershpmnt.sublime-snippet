@@ -5,6 +5,12 @@
 |
 </MvCOMMENT>
 
+<MvFUNCTION NAME = "Module_Notify_OrderShipment_Insert" PARAMETERS = "module var, ordershipment var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_OrderShipment_Delete" PARAMETERS = "module var, ordershipment var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "Module_Notify_OrderShipment_StatusChange" PARAMETERS = "module var, ordershipment_count, original_ordershipments var, ordershipments var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>]]></content>
     <tabTrigger>not_feature_ordershpmnt</tabTrigger>
