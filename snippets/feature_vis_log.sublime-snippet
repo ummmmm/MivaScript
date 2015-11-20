@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Logging Settings Screen Feature (vis_log)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Logging_Validate" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Logging_Update" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Logging_Tabs" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Logging_Content" PARAMETERS = "module var, tab, load_fields" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_vis_log</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
