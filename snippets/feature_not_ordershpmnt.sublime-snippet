@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[<MvCOMMENT>
 |
-| OrderShipment Status Change Notification Feature (not_ordershpmnt)
+| Order Shipment Status Change Notification Feature (not_ordershpmnt)
 |
 </MvCOMMENT>
 
@@ -13,6 +13,6 @@
 
 <MvFUNCTION NAME = "Module_Notify_OrderShipment_StatusChange" PARAMETERS = "module var, ordershipment_count, original_ordershipments var, ordershipments var" STANDARDOUTPUTLEVEL = "">
 </MvFUNCTION>]]></content>
-    <tabTrigger>not_feature_ordershpmnt</tabTrigger>
+    <tabTrigger>feature_not_ordershpmnt</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>
