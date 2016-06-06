@@ -64,6 +64,10 @@
 
 <MvFUNCTION NAME = "ReportModule_Provision_Settings" PARAMETERS = "module var, report var, provide_xml var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ReportModule_Delete" PARAMETERS = "module var, report var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_report</tabTrigger>
     <scope>source.mivascript</scope>
