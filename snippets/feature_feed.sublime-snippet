@@ -1,0 +1,55 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Feed Module Feature (feed)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "FeedModule_Capabilities" PARAMETERS = "module var, capabilities var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.capabilities:output_custom"			VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:provision_settings"	VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Fields" PARAMETERS = "module var, feed var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Prompt" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Field" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Invalid" PARAMETERS = "module var, field_id" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Validate" PARAMETERS = "module var, feed var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Update" PARAMETERS = "module var, feed var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Delete" PARAMETERS = "module var, feed var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Output_Custom" PARAMETERS = "module var, feed var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Output" PARAMETERS = "module var, feed var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "FeedModule_Provision_Settings" PARAMETERS = "module var, feed var, provide_xml var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+]]></content>
+    <tabTrigger>feature_feed</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
