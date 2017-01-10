@@ -9,6 +9,14 @@
 	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>
 
+<MvFUNCTION NAME = "ComponentModule_Validate" PARAMETERS = "module var, item, field_prefix, fields var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "ComponentModule_Update" PARAMETERS = "module var, item, field_prefix, fields var, settings var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "ComponentModule_Content" PARAMETERS = "module var, item, tab, load_fields, field_prefix, fields var, settings var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
@@ -35,14 +43,6 @@
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "ComponentModule_Render_End" PARAMETERS = "module var, item, all_settings var, settings var, param" STANDARDOUTPUTLEVEL = "">
-</MvFUNCTION>
-
-<MvFUNCTION NAME = "ComponentModule_Validate" PARAMETERS = "module var, item, field_prefix, fields var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = 1>
-</MvFUNCTION>
-
-<MvFUNCTION NAME = "ComponentModule_Update" PARAMETERS = "module var, item, field_prefix, fields var, settings var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_component</tabTrigger>
     <scope>source.mivascript</scope>

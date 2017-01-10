@@ -9,13 +9,13 @@
 
 <MvASSIGN NAME = "l.count" VALUE = 0>
 
-<MvWHILE EXPR = "{ NOT ${6:View Name}.d.EOF }">
+<MvWHILE EXPR = "{ NOT ${1:View Name}.d.EOF }">
 	<MvEVAL EXPR = "{ ${7} }">
 
-	<MvSKIP NAME = "Merchant" VIEW = "${8:View Name}" ROWS = 1>
+	<MvSKIP NAME = "Merchant" VIEW = "${1:View Name}" ROWS = 1>
 </MvWHILE>
 
-<MvCLOSEVIEW NAME = "Merchant" VIEW = "${9:View Name}">
+<MvCLOSEVIEW NAME = "Merchant" VIEW = "${1:View Name}">
 <MvFUNCTIONRETURN VALUE = "{ [ g.Module_Library_DB ].ListLoad_EOF_Return( '#Error#', l.count ) }">]]></content>
     <tabTrigger>openview</tabTrigger>
     <scope>source.mivascript</scope>

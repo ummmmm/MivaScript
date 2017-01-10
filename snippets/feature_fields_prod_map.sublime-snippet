@@ -6,7 +6,6 @@
 </MvCOMMENT>
 
 <MvFUNCTION NAME = "Module_Product_Fields_Mapped" PARAMETERS = "module var, product_id, field_map var, output_fields var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_fields_prod_map</tabTrigger>
     <scope>source.mivascript</scope>
