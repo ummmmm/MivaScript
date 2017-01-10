@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Multiple Customer Custom Fields Feature (fields_cust_map)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Customer_Fields_Mapped" PARAMETERS = "module var, customer_id, field_map var, output_fields var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_fields_cust_map</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
