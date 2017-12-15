@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[<MvEVAL EXPR = "{ glosub( miva_array_serialize( ${1} ), ',', '<br/>' ) }">]]></content>
+	<content><![CDATA[<MvEVAL EXPR = "{ glosub( miva_array_serialize( ${1} ), ',', ${2:'<br/>'} ) }">]]></content>
 	<tabTrigger>print_r_pretty</tabTrigger>
 	<scope>source.mivascript</scope>
 </snippet>
