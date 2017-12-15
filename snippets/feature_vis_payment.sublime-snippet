@@ -5,15 +5,15 @@
 |
 </MvCOMMENT>
 
-<MvFUNCTION NAME = "Module_Payment_Tabs" PARAMETERS = "module var, product var" STANDARDOUTPUTLEVEL = "">
+<MvFUNCTION NAME = "Module_Payment_Tabs" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "Module_Product_Head" PARAMETERS = "module var, tab, product var" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+<MvFUNCTION NAME = "Module_Payment_Head" PARAMETERS = "module var, tab" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "Module_Payment_Content" PARAMETERS = "module var, tab, load_fields, product var" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
+<MvFUNCTION NAME = "Module_Payment_Content" PARAMETERS = "module var, tab, load_fields" STANDARDOUTPUTLEVEL = "text, html, compresswhitespace">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
@@ -21,7 +21,7 @@
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "Module_Payment_Update" PARAMETERS = "module var, product var" STANDARDOUTPUTLEVEL = "">
+<MvFUNCTION NAME = "Module_Payment_Update" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_vis_payment</tabTrigger>
