@@ -9,11 +9,11 @@
 	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "Module_Domain_Head" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+<MvFUNCTION NAME = "Module_Domain_Head" PARAMETERS = "module var, tab" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "Module_Domain_Content" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
+<MvFUNCTION NAME = "Module_Domain_Content" PARAMETERS = "module var, tab, load_fields" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
