@@ -5,20 +5,35 @@
 |
 </MvCOMMENT>
 
-<MvFUNCTION NAME = "Module_Category_Field_Name" PARAMETERS = "module var, code" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = "">
-</MvFUNCTION>
-
-<MvFUNCTION NAME = "Module_Category_Field_Value" PARAMETERS = "module var, cat_id, code" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = "">
-</MvFUNCTION>
-
 <MvFUNCTION NAME = "Module_Category_Fields" PARAMETERS = "module var, fields var" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 0>
 </MvFUNCTION>
 
-<MvFUNCTION NAME = "Module_Category_Set_Field" PARAMETERS = "module var, cat_id, code, value" STANDARDOUTPUTLEVEL = "">
+<MvFUNCTION NAME = "Module_Category_Field_Name" PARAMETERS = "module var, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Field_Value" PARAMETERS = "module var, category_id, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Field_Value_Array" PARAMETERS = "module var, category_id, code, values var" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Set_Field" PARAMETERS = "module var, category_id, code, value" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Set_Field_Array" PARAMETERS = "module var, category_id, code, values var, value_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Category_Field_Capabilities" PARAMETERS = "module var, code, capabilities var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.capabilities"			VALUE = "">
+	<MvASSIGN NAME = "l.capabilities:query"		VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:search"	VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:orderby"	VALUE = 0>
 </MvFUNCTION>]]></content>
     <tabTrigger>feature_fields_cat</tabTrigger>
     <scope>source.mivascript</scope>
