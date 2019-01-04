@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+<MvCOMMENT>
+|
+| URI Change Notification Feature (not_uri)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Notify_URI_Insert" PARAMETERS = "module var, uri var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_URI_Update" PARAMETERS = "module var, uri var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Notify_URI_Delete" PARAMETERS = "module var, uri var" STANDARDOUTPUTLEVEL = "">
+</MvFUNCTION>
+]]></content>
+	<tabTrigger>feature_not_uri</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
