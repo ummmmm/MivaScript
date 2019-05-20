@@ -46,15 +46,24 @@
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "ShippingModule_Enabled_Methods" PARAMETERS = "module var, methods var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = "{ l.enabled_methods_count }">
+	<MvASSIGN NAME = "l.methods"		VALUE = "">
+	<MvASSIGN NAME = "l.method_count"	VALUE = 0>
+
+	<MvFUNCTIONRETURN VALUE = "{ l.method_count }">
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "ShippingModule_Shipping_Methods" PARAMETERS = "module var, methods var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = "{ l.shipping_methods_count }">
+	<MvASSIGN NAME = "l.methods"		VALUE = "">
+	<MvASSIGN NAME = "l.method_count"	VALUE = 0>
+
+	<MvFUNCTIONRETURN VALUE = "{ l.method_count }">
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "ShippingModule_Basket_Methods" PARAMETERS = "module var, packages var, package_count, methods var" STANDARDOUTPUTLEVEL = "">
-	<MvFUNCTIONRETURN VALUE = "{ l.basket_methods_count }">
+	<MvASSIGN NAME = "l.methods"		VALUE = "">
+	<MvASSIGN NAME = "l.method_count"	VALUE = 0>
+
+	<MvFUNCTIONRETURN VALUE = "{ l.method_count }">
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "ShippingModule_Calculate_Basket" PARAMETERS = "module var, data" STANDARDOUTPUTLEVEL = "">
