@@ -147,7 +147,7 @@
 		{ "trigger": "miva_setlanguage", 				"contents": "miva_setlanguage( ${1:language} )" },
 		{ "trigger": "miva_setlogmask", 				"contents": "miva_setlogmask( ${1:maskpri} )" },
 		{ "trigger": "miva_sleep", 						"contents": "miva_sleep( ${1:msecs} )" },
-		{ "trigger": "miva_splitstring", 				"contents": "miva_splitstring( ${1:string}, ${2:delimiter}, ${3:output var}, '${4:trim,ltrim,rtrim,lower,upper,escape,insensitive}' )" },
+		{ "trigger": "miva_splitstring", 				"contents": "miva_splitstring( ${1:string}, ${2:delimiter}, ${3:output var}, '${4:trim,ltrim,rtrim,lower,upper,escaped,insensitive}' )" },
 		{ "trigger": "miva_struct_members", 			"contents": "miva_struct_members( ${1:aggregate var}, ${2:members var} )" },
 		{ "trigger": "miva_template_compile", 			"contents": "miva_template_compile( ${1:signat}, ${2:source var}, ${3:sourceitems var}, ${4:target}, ${5:errors var} )" },
 		{ "trigger": "miva_template_compile_dump", 		"contents": "miva_template_compile_dump( ${1:source var}, ${2:errors var} )" },
