@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[<MIVA STANDARDOUTPUTLEVEL = "" IDENT = "\$Id: \$">]]></content>
+    <content><![CDATA[<MIVA STANDARDOUTPUTLEVEL = "">]]></content>
     <tabTrigger>ident</tabTrigger>
     <scope>source.mivascript</scope>
 </snippet>
