@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[' \$ [ g.Module_Library_Native_DBAPI ].DB_Type_INTEGER() \$ ',]]></content>
+	<tabTrigger>db_type_integer</tabTrigger>
+	<scope>source.mivascript</scope>
+</snippet>
