@@ -6,22 +6,19 @@
 </MvCOMMENT>
 
 <MvFUNCTION NAME = "Module_Order_Content" PARAMETERS = "module var, tab, load_fields" STANDARDOUTPUTLEVEL = "">
-	
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "Module_Order_Delete_Order" PARAMETERS = "module var, order var" STANDARDOUTPUTLEVEL = "">
-	
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "Module_Order_Head" PARAMETERS = "module var, tab, order var" STANDARDOUTPUTLEVEL = "">
-	
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "Module_Order_Tabs" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
-	
+	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>
 
 <MvFUNCTION NAME = "Module_Order_Update" PARAMETERS = "module var" STANDARDOUTPUTLEVEL = "">
