@@ -61,6 +61,10 @@
 	<MvFUNCTIONRETURN VALUE = 1>
 </MvFUNCTION>
 
+<MvFUNCTION NAME = "Module_Page_Field_Query_OrderBy_LoadIndexRecord" PARAMETERS = "module var, loaded_record var, page_id, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
 <MvFUNCTION NAME = "Module_Page_Field_Query_Value" PARAMETERS = "module var, view_name, code" STANDARDOUTPUTLEVEL = "">
 	<MvFUNCTIONRETURN VALUE = "">
 </MvFUNCTION>]]></content>
