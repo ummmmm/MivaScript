@@ -1,0 +1,69 @@
+<snippet>
+    <content><![CDATA[<MvCOMMENT>
+|
+| Page Custom Fields Feature (fields_page)
+|
+</MvCOMMENT>
+
+<MvFUNCTION NAME = "Module_Page_Fields" PARAMETERS = "module var, fields var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.fields"			VALUE = "">
+	<MvASSIGN NAME = "l.field_count"	VALUE = 0>
+
+	<MvFUNCTIONRETURN VALUE = "{ l.field_count }">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Name" PARAMETERS = "module var, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Value" PARAMETERS = "module var, page_id, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Value_Array" PARAMETERS = "module var, page_id, code, values var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.values"			VALUE = "">
+	<MvASSIGN NAME = "l.value_count"	VALUE = 0>
+
+	<MvFUNCTIONRETURN VALUE = "{ l.value_count }">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Set_Field" PARAMETERS = "module var, page_id, code, value" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Set_Field_Array" PARAMETERS = "module var, page_id, code, values var, value_count" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Choices" PARAMETERS = "module var, code, choices var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.choices"		VALUE = "">
+	<MvASSIGN NAME = "l.choice_count"	VALUE = 0>
+
+	<MvFUNCTIONRETURN VALUE = "{ l.choice_count }">
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Capabilities" PARAMETERS = "module var, code, capabilities var" STANDARDOUTPUTLEVEL = "">
+	<MvASSIGN NAME = "l.capabilities"			VALUE = "">
+	<MvASSIGN NAME = "l.capabilities:query"		VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:search"	VALUE = 0>
+	<MvASSIGN NAME = "l.capabilities:orderby"	VALUE = 0>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Query" PARAMETERS = "module var, query var, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Query_Search" PARAMETERS = "module var, query var, code, operator, value" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Query_OrderBy" PARAMETERS = "module var, query var, code, direction" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = 1>
+</MvFUNCTION>
+
+<MvFUNCTION NAME = "Module_Page_Field_Query_Value" PARAMETERS = "module var, view_name, code" STANDARDOUTPUTLEVEL = "">
+	<MvFUNCTIONRETURN VALUE = "">
+</MvFUNCTION>]]></content>
+    <tabTrigger>feature_fields_page</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>
